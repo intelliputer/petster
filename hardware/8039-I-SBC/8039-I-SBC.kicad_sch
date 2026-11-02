@@ -3546,7 +3546,7 @@
 			(uuid "8368a3d9-bad1-4310-8625-a2448f6d3aeb")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "U1")
 					(unit 1)
@@ -3676,7 +3676,7 @@
 			(uuid "acbe1937-01fe-4444-8fbc-f581dc644a66")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "U2")
 					(unit 1)
@@ -3746,7 +3746,7 @@
 			)
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "U3")
 					(unit 1)
@@ -3824,7 +3824,7 @@
 			(uuid "9795fa7e-7e3a-4f14-9288-8fce615c4b8b")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "R1")
 					(unit 1)
@@ -3902,7 +3902,7 @@
 			(uuid "e0bbff9f-81e6-4e00-b402-8d49d93a1ba0")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "C3")
 					(unit 1)
@@ -3978,7 +3978,7 @@
 			(uuid "4fe0db1e-dc77-4105-85bf-67a84a57a261")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "D1")
 					(unit 1)
@@ -4054,7 +4054,7 @@
 			(uuid "d4a088f4-de21-4e1d-ad7f-a48a86ecaaca")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "Y1")
 					(unit 1)
@@ -4132,7 +4132,7 @@
 			(uuid "7e31c5f5-de76-4455-888d-0bb05a86d1ae")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "C1")
 					(unit 1)
@@ -4210,7 +4210,7 @@
 			(uuid "96923e99-9c25-4d4f-b120-180e36dbdc55")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "C2")
 					(unit 1)
@@ -4289,7 +4289,7 @@
 			(uuid "d3e0aa11-0bdd-4f15-a5d0-f00da1286d21")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "U4")
 					(unit 1)
@@ -4367,7 +4367,7 @@
 			(uuid "dea0f3fc-bf91-4215-864d-9dc12ce999a1")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "C7")
 					(unit 1)
@@ -4445,7 +4445,7 @@
 			(uuid "3ab0232e-e143-4ecd-8c90-7c08f7a3a783")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "C8")
 					(unit 1)
@@ -4577,7 +4577,7 @@
 			(uuid "b2ff9b07-6c56-4d4e-a781-a2d69373aaa1")
 		)
 		(instances
-			(project "eds8039-reference"
+			(project "8039-I-SBC"
 				(path "/f7830dcb-b117-4fae-8742-4ab63856ddf2"
 					(reference "J1")
 					(unit 1)

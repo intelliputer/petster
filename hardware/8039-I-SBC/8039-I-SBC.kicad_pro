@@ -257,7 +257,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "eds8039-reference.kicad_pro",
+    "filename": "8039-I-SBC.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -425,7 +425,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "eds8039-reference.kicad_sch",
+        "filename": "8039-I-SBC.kicad_sch",
         "name": "Root",
         "uuid": "f7830dcb-b117-4fae-8742-4ab63856ddf2"
       }

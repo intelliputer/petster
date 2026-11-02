@@ -15,6 +15,6 @@ The EDS design is a useful **bus-topology reference** for the early external-ROM
 
 Its source documentation says `JP3` remaps addresses `0x1000`–`0x1FFF` of a larger EPROM into the 8039's fixed `0x0000`–`0x0FFF` program window. That provides an erase-and-retry convenience, not live bank switching. A Petster 27C128 adapter instead needs independently controlled `A12` and `A13`, with the bank changed only while power is off or the MCU is held in reset.
 
-Open `eds8039-reference.kicad_sch` in KiCad 10 or later. It was migrated and exported successfully with the installed Flatpak KiCad 10. The machine-generated CSV BOM and the source-image transcription checklist are both included.
+Open `8039-I-SBC.kicad_sch` in KiCad 10 or later. It was migrated and exported successfully with the installed Flatpak KiCad 10. The machine-generated CSV BOM and the source-image transcription checklist are both included.
 
 The current ERC report deliberately records unresolved pins while the image transcription is completed. It is an audit artifact, not a clean electrical verification; no EDS PCB fabrication files should be generated from it yet.

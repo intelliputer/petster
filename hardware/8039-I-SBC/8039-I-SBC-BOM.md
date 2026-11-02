@@ -25,6 +25,6 @@ This BOM was transcribed from the archived EDS schematic image. It is a purchasi
 | J1 | 1 | 2×10 IDC header | User I/O header. |
 | J2 | 1 | 5-pin input header | 9–12 V AC/DC input connection. |
 
-The machine-generated [`eds8039-reference-bom.csv`](eds8039-reference-bom.csv) is exported by KiCad from the symbols currently placed in the schematic. It is intentionally a partial BOM until the remaining support and jumper symbols have been placed and connected.
+The machine-generated [`8039-I-SBC-bom.csv`](8039-I-SBC-bom.csv) is exported by KiCad from the symbols currently placed in the schematic. It is intentionally a partial BOM until the remaining support and jumper symbols have been placed and connected.
 
 Do not fit a 27C128 directly at U3: it is a 28-pin DIP. Use a 24-pin-to-28-pin adapter for the banked-ROM experiment. The EDS `JP3` option is a fixed 4 KiB-window remap and cannot substitute for the adapter's two bank-select signals.

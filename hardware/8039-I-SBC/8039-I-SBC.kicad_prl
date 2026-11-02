@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "eds8039-reference.kicad_prl",
+    "filename": "8039-I-SBC.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
