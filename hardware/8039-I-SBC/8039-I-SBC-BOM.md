@@ -28,3 +28,23 @@ This BOM was transcribed from the archived EDS schematic image. It is a purchasi
 The machine-generated [`8039-I-SBC-bom.csv`](8039-I-SBC-bom.csv) is exported by KiCad from the symbols currently placed in the schematic. It is intentionally a partial BOM until the remaining support and jumper symbols have been placed and connected.
 
 Do not fit a 27C128 directly at U3: it is a 28-pin DIP. Use a 24-pin-to-28-pin adapter for the banked-ROM experiment. The EDS `JP3` option is a fixed 4 KiB-window remap and cannot substitute for the adapter's two bank-select signals.
+
+## Locate first — 8048 firmware path
+
+For new firmware, an 8048 may substitute for the 8039 when used with external
+program memory. Locate these first, and record the exact manufacturer and part
+marking before changing the KiCad BOM:
+
+| Priority | Part to locate | Requirement |
+| --- | --- | --- |
+| 1 | 8048-family MCU | 40-pin DIP, 5 V operation, confirmed `EA` external-access capability, and a clock rating suitable for the chosen crystal. An 8039 remains the preferred original-compatible option. |
+| 2 | 40-pin turned-pin socket | Allows safe MCU substitution during bring-up. |
+| 3 | 27C32-compatible EPROM and 24-pin wide-DIP socket | First firmware target; 4 KiB matches the MCS-48 external program window. |
+| 4 | 74LS373, 74ALS373, or 74HCT373 | Use a 5 V TTL-compatible latch. Do not substitute a 74HC373 without checking logic-level compatibility. |
+| 5 | Crystal and two 22 pF capacitors | Select only after confirming the fitted MCU's oscillator range; 6 MHz is a sensible starting point if the exact part supports it. |
+| 6 | EPROM programmer and UV eraser | Needed for a UV 27C32. A verified compatible OTP/EPROM workflow is an alternative. |
+| 7 | Current-limited 5 V bench supply and logic analyser or oscilloscope | Required for first power-on and observation of reset, `ALE`, and `~PSEN`. |
+
+For an 8048, `EA` must be high during reset to select external program memory.
+New firmware must use no more than 64 bytes of internal RAM; the 8039 has 128
+bytes, so firmware written for it may not be directly portable.
