@@ -1008,14 +1008,14 @@
 			)
 		)
 	)
-	(gr_text "Petster 27C128 Adapter"
+	(gr_text "27C128 Daughterboard"
 		(at 128 148 0)
 		(layer "F.SilkS")
 		(uuid "c36f9450-9f64-4cca-99ac-7d8cd8e95b67")
 		(effects
 			(font
-				(size 1.1 1.1)
-				(thickness 0.18)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
