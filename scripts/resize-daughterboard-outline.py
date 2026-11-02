@@ -2,7 +2,7 @@
 """Resize only the Edge.Cuts outline; preserve the routed PCB verbatim."""
 import pcbnew
 
-path = "reference/petster-27c128-daughterboard/petster-27c128-daughterboard.kicad_pcb"
+path = "hardware/petster-27c128-daughterboard/petster-27c128-daughterboard.kicad_pcb"
 board = pcbnew.LoadBoard(path)
 
 for item in board.GetDrawings():
