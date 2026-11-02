@@ -22,6 +22,28 @@ The central artifact is a 4 KiB ROM image. The 8039 is an Intel MCS-48-family co
 | [`docs/UNIT-OBSERVATIONS.md`](docs/UNIT-OBSERVATIONS.md) | Owner-reported markings and the evidence still needed from this specific cat. |
 | [`tools/`](tools/README.md) | Period 8048/8039 development and analysis tools. |
 
+### Hardware status
+
+The 27C128 banked-ROM daughterboard is now a routed, two-layer PCB suitable
+for a standard fabrication run. It adapts the Petster's 24-pin National
+`NMC27C32` socket to a 28-pin `27C128`, with two jumpers selecting A12 and
+A13 (four 4 KiB banks). Its functional pin assignments have been checked
+against the NMC27C32B and 27C128 datasheets.
+
+| Item | Current state |
+| --- | --- |
+| KiCad source | [`reference/petster-27c128-daughterboard/`](reference/petster-27c128-daughterboard/) |
+| PCB | Routed, 45 × 45 mm, two copper layers, 0.20 mm tracks |
+| Electrical rules check | 0 violations; 0 unconnected items (KiCad, 2026-11-02) |
+| Production archive | [`27c128-daughterboard.zip`](reference/petster-27c128-daughterboard/production/27c128-daughterboard.zip) |
+| Solder mask | Present on both sides and on all plated pads |
+| Hardware test | Pending continuity checks, then a controlled power-on test in the Petster |
+
+This is a passive adapter: it relies on the Petster's existing +5 V supply
+and external-ROM signals. Fit C1, both bank-select shunts, the 24-pin male
+plug, and the 28-pin socket before use. Do not change bank jumpers while the
+Petster is powered.
+
 ### Integrity and provenance
 
 The ZIP payload and Intel HEX file both resolve byte-for-byte to `code/petster.bin`. The canonical ROM is 4,096 bytes and has this SHA-256 digest:
