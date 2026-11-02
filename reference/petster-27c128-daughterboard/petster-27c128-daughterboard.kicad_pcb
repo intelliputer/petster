@@ -932,17 +932,6 @@
 		(uuid "4e0816a1-7a19-4707-bc58-923037b6450e")
 	)
 	(gr_text "PIN 1 >"
-		(at 114 115 0)
-		(layer "F.SilkS")
-		(uuid "ba45c1fd-ff2f-4ebc-8849-9f023b2bd5ce")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.18)
-			)
-		)
-	)
-	(gr_text "PIN 1 >"
 		(at 116.5 110 0)
 		(layer "F.SilkS")
 		(uuid "045f772d-93da-4285-b44e-44963c7c8fd2")
@@ -1008,8 +997,8 @@
 			)
 		)
 	)
-	(gr_text "U1  27C128 SOCKET"
-		(at 128 107 0)
+	(gr_text "U1  27C128"
+		(at 122 108 0)
 		(layer "F.SilkS")
 		(uuid "c05db960-7c74-4c1b-ae8c-739b411c631d")
 		(effects
@@ -1041,8 +1030,20 @@
 			)
 		)
 	)
-	(gr_text "J1  24-PIN PLUG"
-		(at 121 148 0)
+	(gr_text "< PIN 1"
+		(at 114 115 0)
+		(layer "B.SilkS")
+		(uuid "ba45c1fd-ff2f-4ebc-8849-9f023b2bd5ce")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "J1  27C32"
+		(at 114 113 0)
 		(layer "B.SilkS")
 		(uuid "1e6152bd-870b-4611-9694-c3cac4b2ccc6")
 		(effects
@@ -1050,6 +1051,7 @@
 				(size 0.85 0.85)
 				(thickness 0.18)
 			)
+			(justify mirror)
 		)
 	)
 	(segment
