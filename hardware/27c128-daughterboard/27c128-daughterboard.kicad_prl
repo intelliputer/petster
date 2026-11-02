@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "petster-27c128-daughterboard.kicad_prl",
+    "filename": "27c128-daughterboard.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

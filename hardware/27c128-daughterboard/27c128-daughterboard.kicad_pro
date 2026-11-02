@@ -492,7 +492,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "petster-27c128-daughterboard.kicad_pro",
+    "filename": "27c128-daughterboard.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -660,7 +660,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "petster-27c128-daughterboard.kicad_sch",
+        "filename": "27c128-daughterboard.kicad_sch",
         "name": "Root",
         "uuid": "f8a0079c-b555-4fb8-91bf-7257ebec9a95"
       }

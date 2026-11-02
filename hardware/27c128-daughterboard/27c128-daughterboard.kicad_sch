@@ -2823,7 +2823,7 @@
 			(uuid "54c9dbf2-51e8-4762-993a-b7221b3ae2ce")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "U1")
 					(unit 1)
@@ -2966,7 +2966,7 @@
 			(uuid "86d96f48-9b2b-4da4-b972-140942bc784a")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "J1")
 					(unit 1)
@@ -3044,7 +3044,7 @@
 			(uuid "2e3bc0b9-8e52-4dc7-afac-075dc41808d0")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "R1")
 					(unit 1)
@@ -3122,7 +3122,7 @@
 			(uuid "13f7e63c-ddc8-49b1-9044-b77d3c03b9d2")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "R2")
 					(unit 1)
@@ -3205,7 +3205,7 @@
 			(uuid "f3d28637-daec-440a-9abf-3510873348fe")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "JP1")
 					(unit 1)
@@ -3288,7 +3288,7 @@
 			(uuid "bba2962e-09fc-43b9-b689-a861d4340298")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "JP2")
 					(unit 1)
@@ -3370,7 +3370,7 @@
 			(uuid "11404e7b-90a6-4c7a-af26-89f822a9e421")
 		)
 		(instances
-			(project "petster-27c128-daughterboard"
+			(project "27c128-daughterboard"
 				(path "/f8a0079c-b555-4fb8-91bf-7257ebec9a95"
 					(reference "C1")
 					(unit 1)

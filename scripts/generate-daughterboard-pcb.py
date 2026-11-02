@@ -3,7 +3,7 @@
 import os
 import pcbnew
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "reference", "petster-27c128-daughterboard", "petster-27c128-daughterboard.kicad_pcb")
+OUT = os.path.join(os.path.dirname(__file__), "..", "hardware", "27c128-daughterboard", "27c128-daughterboard.kicad_pcb")
 MM = pcbnew.FromMM
 
 board = pcbnew.BOARD()

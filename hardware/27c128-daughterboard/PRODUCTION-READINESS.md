@@ -2,7 +2,7 @@
 
 ## Released PCB
 
-`petster-27c128-daughterboard.kicad_pcb` is a routed, 45 × 45 mm, two-layer
+`27c128-daughterboard.kicad_pcb` is a routed, 45 × 45 mm, two-layer
 adapter PCB. It carries a 24-pin male DIP plug on its underside for the
 Petster's original NMC27C32 socket and a 28-pin 27C128 socket on top.
 

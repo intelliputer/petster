@@ -32,10 +32,10 @@ against the NMC27C32B and 27C128 datasheets.
 
 | Item | Current state |
 | --- | --- |
-| KiCad source | [`hardware/petster-27c128-daughterboard/`](hardware/petster-27c128-daughterboard/) |
+| KiCad source | [`hardware/27c128-daughterboard/`](hardware/27c128-daughterboard/) |
 | PCB | Routed, 45 × 45 mm, two copper layers, 0.20 mm tracks |
 | Electrical rules check | 0 violations; 0 unconnected items (KiCad, 2026-11-02) |
-| Production archive | [`27c128-daughterboard.zip`](hardware/petster-27c128-daughterboard/production/27c128-daughterboard.zip) |
+| Production archive | [`27c128-daughterboard.zip`](hardware/27c128-daughterboard/production/27c128-daughterboard.zip) |
 | Solder mask | Present on both sides and on all plated pads |
 | Hardware test | Pending continuity checks, then a controlled power-on test in the Petster |
 
