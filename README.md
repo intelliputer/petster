@@ -18,7 +18,8 @@ The central artifact is a 4 KiB ROM image. The 8039 is an Intel MCS-48-family co
 | [`code/PetsterDeluxeEprom.zip`](code/PetsterDeluxeEprom.zip) | Original-style archive containing the same ROM payload. |
 | [`docs/`](docs) | Owner's manual, technical guide, and reference material. |
 | [`docs/TECHNICAL-RESEARCH.md`](docs/TECHNICAL-RESEARCH.md) | Sourced 1985 hardware findings, preserved teardown, and open questions. |
-| [`datasheets/`](datasheets) | INS8035 datasheet. |
+| [`datasheets/`](datasheets) | INS8039-family reference datasheet. |
+| [`docs/UNIT-OBSERVATIONS.md`](docs/UNIT-OBSERVATIONS.md) | Owner-reported markings and the evidence still needed from this specific cat. |
 | [`tools/`](tools/README.md) | Period 8048/8039 development and analysis tools. |
 
 ### Integrity and provenance

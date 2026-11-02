@@ -1,0 +1,6 @@
+"Refs","Value","Footprint","Qty"
+"J1","24-PIN PLUG TO PETSTER 27C32 SOCKET","Package_DIP:DIP-24_W15.24mm","1"
+"R1","10k BANK0 PULL-DOWN","","1"
+"R2","10k BANK1 PULL-DOWN","","1"
+"SW1","BANK SELECT","","1"
+"U1","27C128","Package_DIP:DIP-28_W15.24mm","1"

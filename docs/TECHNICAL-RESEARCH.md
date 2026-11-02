@@ -13,7 +13,7 @@ This note records the externally sourced evidence used to guide work on the Pets
 
 ## Findings applicable to the 1985 Deluxe model
 
-The Painter teardown identifies the 1985 board as an INS8039 design with a 27C32 external EPROM and 27C373 octal latch. It describes a later 1986 revision with an INS8049 and internal program memory. This repository's external-ROM image and 4 KiB 27C32 archive are consistent with the 1985 variant, but the physical chip markings and board revision remain the authority.
+The Painter teardown identifies the 1985 board as an INS8039 design with a 27C32 external EPROM and 27C373 octal latch. It describes a later 1986 revision with an INS8049 and internal program memory. The owner's reported markings for this unit—National `NMC27C32` EPROM and a 40-pin processor marked `20-68039`, `+B8436`, with the National-style wave mark—are consistent with that external-ROM 8039 variant. A clear component photograph remains the primary evidence; the house number has not been independently decoded.
 
 The teardown describes two boards:
 
@@ -30,7 +30,7 @@ For the 27C128 adapter, retain the original address mapping and use four 4 KiB b
 
 ## What is still unknown
 
-No original Petster electrical schematic, component-value list, complete netlist, or verified CPU-port map was found in the public sources searched. Do not infer those details from the generic 8039 board reference or from a different Petster revision.
+No original Petster electrical schematic, component-value list, complete netlist, or verified CPU-port map was found in the public sources searched. Do not infer those details from the generic EDS 8039 reference board or from a different Petster revision. The EDS board demonstrates the normal 8039 external-ROM topology only; its `JP3` maps one 4 KiB EPROM half into the 8039's sole 4 KiB program window and is not runtime bank switching.
 
 Before connecting an adapter or custom firmware, capture these from the actual unit:
 

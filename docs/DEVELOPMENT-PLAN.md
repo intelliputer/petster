@@ -33,7 +33,7 @@ The 8039 sees a 4 KiB program window. A 27C128 contains 16 KiB, so it can expose
 | 2 | `0x2000–0x2FFF` | 1 | 0 |
 | 3 | `0x3000–0x3FFF` | 1 | 1 |
 
-1. Verify the original 27C32 pinout and the Petster socket signals from the actual chip marking and board, not from an assumed pinout. Document the 27C373 latch and its connections before making the adapter.
+1. The original EPROM is identified as a National `NMC27C32`, which establishes the standard 24-pin 2732 pinout. Confirm the Petster socket signals by continuity on the actual board and document the 27C373 latch connections before making the adapter.
 2. Make a 27C32-socket-to-27C128 adapter. Map the existing ROM address, data, chip-enable, output-enable, ground, and supply signals directly; put the 27C128 into its normal read mode.
 3. Drive the two additional 27C128 address lines (`A12`, `A13`) from a two-position-per-bit DIP switch or jumper block. Add defined pull-downs so the default is always bank 0.
 4. Label the adapter's orientation, bank settings, and supply voltage. Inspect continuity and check for shorts before it goes near the cat.
