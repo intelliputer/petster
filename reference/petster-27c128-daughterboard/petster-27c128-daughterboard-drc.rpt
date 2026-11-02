@@ -1,198 +1,146 @@
 ** Drc report for petster-27c128-daughterboard.kicad_pcb **
-** Created on 2026-11-02T16:52:54 **
+** Created on 2026-11-02T17:20:27 **
 ** Report includes: Errors, Warnings **
 
-** Found 45 DRC violations **
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(40.0000 mm, 22.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
-    @(42.5400 mm, 22.0000 mm): Track [A13_BANK] on B.Cu, length 14.1130 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(45.0800 mm, 22.0000 mm): Track [+5V] on B.Cu, length 4.9200 mm
-    @(40.0000 mm, 22.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-    @(35.1000 mm, 75.3200 mm): Track [D6] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(13.7000 mm, 82.9400 mm): Track [GND] on F.Cu, length 39.9200 mm
-    @(15.0000 mm, 60.0800 mm): Track [A5] on F.Cu, length 7.6000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(42.5400 mm, 48.0000 mm): Track [GND] on B.Cu, length 5.4600 mm
-    @(40.0000 mm, 48.0000 mm): Track [+5V] on B.Cu, length 10.0000 mm
-[shorting_items]: Items shorting two nets (nets A12_BANK and GND)
-    Local override; error
-    @(42.5400 mm, 12.0000 mm): PTH pad 2 [A12_BANK] of JP1
-    @(40.0000 mm, 12.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
-[shorting_items]: Items shorting two nets (nets GND and +5V)
-    Local override; error
-    @(48.0000 mm, 48.0000 mm): Track [GND] on B.Cu, length 38.0000 mm
-    @(40.0000 mm, 48.0000 mm): PTH pad 1 [+5V] of C1
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 72.7800 mm): Track [A0] on F.Cu, length 4.1000 mm
-    @(12.3000 mm, 77.8600 mm): Track [D1] on F.Cu, length 39.9200 mm
-[shorting_items]: Items shorting two nets (nets GND and +5V)
-    Local override; error
-    @(42.5400 mm, 48.0000 mm): PTH pad 2 [GND] of C1
-    @(40.0000 mm, 48.0000 mm): Track [+5V] on B.Cu, length 10.0000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 70.2400 mm): Track [A1] on F.Cu, length 4.8000 mm
-    @(10.9000 mm, 72.7800 mm): Track [A0] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 67.7000 mm): Track [A2] on F.Cu, length 5.5000 mm
-    @(10.2000 mm, 70.2400 mm): Track [A1] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 65.1600 mm): Track [A3] on F.Cu, length 6.2000 mm
-    @(10.2000 mm, 70.2400 mm): Track [A1] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 62.6200 mm): Track [A4] on F.Cu, length 6.9000 mm
-    @(10.2000 mm, 70.2400 mm): Track [A1] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 60.0800 mm): Track [A5] on F.Cu, length 7.6000 mm
-    @(8.1000 mm, 62.6200 mm): Track [A4] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(7.4000 mm, 60.0800 mm): Track [A5] on F.Cu, length 39.9200 mm
-    @(15.0000 mm, 57.5400 mm): Track [A6] on F.Cu, length 8.3000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 57.5400 mm): Track [A6] on F.Cu, length 8.3000 mm
-    @(8.1000 mm, 62.6200 mm): Track [A4] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 55.0000 mm): Track [A7] on F.Cu, length 9.0000 mm
-    @(8.1000 mm, 62.6200 mm): Track [A4] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 60.0800 mm): Track [A9] on F.Cu, length 9.0600 mm
-    @(38.6000 mm, 62.6200 mm): Track [A11] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 57.5400 mm): Track [A8] on F.Cu, length 9.7600 mm
-    @(39.3000 mm, 60.0800 mm): Track [A9] on F.Cu, length 39.9200 mm
-[shorting_items]: Items shorting two nets (nets GND and A9)
-    Local override; error
-    @(40.0000 mm, 22.0000 mm): PTH pad 1 [GND] of JP2
-    @(39.3000 mm, 60.0800 mm): Track [A9] on F.Cu, length 39.9200 mm
-[shorting_items]: Items shorting two nets (nets GND and A8)
-    Local override; error
-    @(40.0000 mm, 22.0000 mm): PTH pad 1 [GND] of JP2
-    @(40.0000 mm, 57.5400 mm): Track [A8] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 67.7000 mm): Track [A10] on F.Cu, length 6.9600 mm
-    @(33.7000 mm, 80.4000 mm): Track [D4] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 62.6200 mm): Track [A11] on F.Cu, length 8.3600 mm
-    @(33.7000 mm, 80.4000 mm): Track [D4] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(37.2000 mm, 67.7000 mm): Track [A10] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(38.6000 mm, 62.6200 mm): Track [A11] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(11.6000 mm, 75.3200 mm): Track [D0] on F.Cu, length 39.9200 mm
-    @(15.0000 mm, 60.0800 mm): Track [A5] on F.Cu, length 7.6000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(13.0000 mm, 80.4000 mm): Track [D2] on F.Cu, length 39.9200 mm
-    @(15.0000 mm, 55.0000 mm): Track [A7] on F.Cu, length 9.0000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(15.0000 mm, 77.8600 mm): Track [D1] on F.Cu, length 2.7000 mm
-    @(13.7000 mm, 82.9400 mm): Track [GND] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(33.0000 mm, 82.9400 mm): Track [D3] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 80.4000 mm): Track [D4] on F.Cu, length 3.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(12.3000 mm, 77.8600 mm): Track [D1] on F.Cu, length 39.9200 mm
-    @(15.0000 mm, 60.0800 mm): Track [A5] on F.Cu, length 7.6000 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(34.4000 mm, 77.8600 mm): Track [D5] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(33.7000 mm, 80.4000 mm): Track [D4] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(35.1000 mm, 75.3200 mm): Track [D6] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 70.2400 mm): Track [~CE] on F.Cu, length 6.2600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 75.3200 mm): Track [D6] on F.Cu, length 4.8600 mm
-    @(33.0000 mm, 82.9400 mm): Track [D3] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 77.8600 mm): Track [D5] on F.Cu, length 4.1600 mm
-    @(33.7000 mm, 80.4000 mm): Track [D4] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(35.8000 mm, 72.7800 mm): Track [D7] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 72.7800 mm): Track [D7] on F.Cu, length 5.5600 mm
-    @(33.0000 mm, 82.9400 mm): Track [D3] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(30.2400 mm, 65.1600 mm): Track [~OE] on F.Cu, length 7.6600 mm
-    @(33.0000 mm, 82.9400 mm): Track [D3] on F.Cu, length 39.9200 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(36.5000 mm, 70.2400 mm): Track [~CE] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(37.9000 mm, 65.1600 mm): Track [~OE] on F.Cu, length 39.9200 mm
-    @(30.2400 mm, 55.0000 mm): Track [+5V] on F.Cu, length 10.4600 mm
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(42.5400 mm, 12.0000 mm): Track [A12_BANK] on B.Cu, length 27.5453 mm
-    @(40.0000 mm, 12.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
-[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0954 mm)
-    Local override; error
-    @(40.0000 mm, 22.0000 mm): PTH pad 1 [GND] of JP2
-    @(42.5400 mm, 22.0000 mm): Track [A13_BANK] on B.Cu, length 14.1130 mm
-[shorting_items]: Items shorting two nets (nets +5V and GND)
-    Local override; error
-    @(40.7000 mm, 55.0000 mm): Track [+5V] on F.Cu, length 45.0000 mm
-    @(40.0000 mm, 12.0000 mm): PTH pad 1 [GND] of JP1
-[tracks_crossing]: Tracks crossing
-    Local override; error
-    @(45.0800 mm, 12.0000 mm): Track [+5V] on B.Cu, length 4.9200 mm
-    @(40.0000 mm, 12.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
-[silk_edge_clearance]: Silkscreen clipped by board edge
-    Rule: board setup constraints silk; warning
-    @(5.0000 mm, 95.0000 mm): Segment on Edge.Cuts
-    @(9.0000 mm, 92.0000 mm): PCB text 'PETSTER 27C128 ADAPTER REV A' on F.Silkscreen
+** Found 0 DRC violations **
 
-** Found 2 unconnected pads **
+** Found 34 unconnected pads **
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(40.0000 mm, 22.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
-    @(40.0000 mm, 12.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
+    @(117.3400 mm, 144.0100 mm): PTH pad 12 [GND] of J1
+    @(119.8800 mm, 144.0100 mm): PTH pad 14 [GND] of U1
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(42.5400 mm, 48.0000 mm): Track [GND] on B.Cu, length 5.4600 mm
-    @(40.0000 mm, 22.0000 mm): Track [GND] on B.Cu, length 8.0000 mm
+    @(119.8800 mm, 144.0100 mm): PTH pad 14 [GND] of U1
+    @(142.5400 mm, 130.0000 mm): PTH pad 2 [GND] of C1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(140.0000 mm, 112.0000 mm): PTH pad 1 [GND] of JP1
+    @(140.0000 mm, 120.0000 mm): PTH pad 1 [GND] of JP2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(142.5400 mm, 130.0000 mm): PTH pad 2 [GND] of C1
+    @(140.0000 mm, 120.0000 mm): PTH pad 1 [GND] of JP2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(119.8800 mm, 113.5300 mm): PTH pad 2 [A12_BANK] of U1
+    @(142.5400 mm, 112.0000 mm): PTH pad 2 [A12_BANK] of JP1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(119.8800 mm, 110.9900 mm): PTH pad 1 [+5V] of U1
+    @(132.5800 mm, 116.0700 mm): PTH pad 24 [+5V] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 116.0700 mm): PTH pad 24 [+5V] of J1
+    @(135.1200 mm, 113.5300 mm): PTH pad 27 [+5V] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(135.1200 mm, 113.5300 mm): PTH pad 27 [+5V] of U1
+    @(135.1200 mm, 110.9900 mm): PTH pad 28 [+5V] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(140.0000 mm, 130.0000 mm): PTH pad 1 [+5V] of C1
+    @(145.0800 mm, 120.0000 mm): PTH pad 3 [+5V] of JP2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(145.0800 mm, 112.0000 mm): PTH pad 3 [+5V] of JP1
+    @(135.1200 mm, 110.9900 mm): PTH pad 28 [+5V] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(145.0800 mm, 120.0000 mm): PTH pad 3 [+5V] of JP2
+    @(145.0800 mm, 112.0000 mm): PTH pad 3 [+5V] of JP1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 116.0700 mm): PTH pad 1 [A7] of J1
+    @(119.8800 mm, 116.0700 mm): PTH pad 3 [A7] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 118.6100 mm): PTH pad 2 [A6] of J1
+    @(119.8800 mm, 118.6100 mm): PTH pad 4 [A6] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 121.1500 mm): PTH pad 3 [A5] of J1
+    @(119.8800 mm, 121.1500 mm): PTH pad 5 [A5] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 123.6900 mm): PTH pad 4 [A4] of J1
+    @(119.8800 mm, 123.6900 mm): PTH pad 6 [A4] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 126.2300 mm): PTH pad 5 [A3] of J1
+    @(119.8800 mm, 126.2300 mm): PTH pad 7 [A3] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 128.7700 mm): PTH pad 6 [A2] of J1
+    @(119.8800 mm, 128.7700 mm): PTH pad 8 [A2] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 131.3100 mm): PTH pad 7 [A1] of J1
+    @(119.8800 mm, 131.3100 mm): PTH pad 9 [A1] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 133.8500 mm): PTH pad 8 [A0] of J1
+    @(119.8800 mm, 133.8500 mm): PTH pad 10 [A0] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 136.3900 mm): PTH pad 9 [D0] of J1
+    @(119.8800 mm, 136.3900 mm): PTH pad 11 [D0] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 138.9300 mm): PTH pad 10 [D1] of J1
+    @(119.8800 mm, 138.9300 mm): PTH pad 12 [D1] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.3400 mm, 141.4700 mm): PTH pad 11 [D2] of J1
+    @(119.8800 mm, 141.4700 mm): PTH pad 13 [D2] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 144.0100 mm): PTH pad 13 [D3] of J1
+    @(135.1200 mm, 144.0100 mm): PTH pad 15 [D3] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 141.4700 mm): PTH pad 14 [D4] of J1
+    @(135.1200 mm, 141.4700 mm): PTH pad 16 [D4] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 138.9300 mm): PTH pad 15 [D5] of J1
+    @(135.1200 mm, 138.9300 mm): PTH pad 17 [D5] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 136.3900 mm): PTH pad 16 [D6] of J1
+    @(135.1200 mm, 136.3900 mm): PTH pad 18 [D6] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 133.8500 mm): PTH pad 17 [D7] of J1
+    @(135.1200 mm, 133.8500 mm): PTH pad 19 [D7] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 131.3100 mm): PTH pad 18 [~CE] of J1
+    @(135.1200 mm, 131.3100 mm): PTH pad 20 [~CE] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 128.7700 mm): PTH pad 19 [A10] of J1
+    @(135.1200 mm, 128.7700 mm): PTH pad 21 [A10] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 126.2300 mm): PTH pad 20 [~OE] of J1
+    @(135.1200 mm, 126.2300 mm): PTH pad 22 [~OE] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 123.6900 mm): PTH pad 21 [A11] of J1
+    @(135.1200 mm, 123.6900 mm): PTH pad 23 [A11] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 121.1500 mm): PTH pad 22 [A9] of J1
+    @(135.1200 mm, 121.1500 mm): PTH pad 24 [A9] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.5800 mm, 118.6100 mm): PTH pad 23 [A8] of J1
+    @(135.1200 mm, 118.6100 mm): PTH pad 25 [A8] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(135.1200 mm, 116.0700 mm): PTH pad 26 [A13_BANK] of U1
+    @(142.5400 mm, 120.0000 mm): PTH pad 2 [A13_BANK] of JP2
 
 ** Found 0 Footprint errors **
 

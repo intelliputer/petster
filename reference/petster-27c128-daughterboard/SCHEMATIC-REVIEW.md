@@ -4,7 +4,7 @@ This is the electrical contract for the KiCad schematic. Review and approve it b
 
 ## Function
 
-`J1` is a **24-pin male DIP plug**, made with turned/machined pins or an equivalent interposer—not a DIP socket. It plugs into the Petster's original NMC27C32 socket. `U1` is a 28-pin wide-DIP socket for a 27C128. The adapter has two three-pin jumpers, which select the two additional address bits while the Petster is unpowered.
+`J1` is a **24-pin male DIP plug**, made with turned/machined pins or an equivalent interposer—not a DIP socket. It plugs into the Petster's original NMC27C32 socket. `U1` is a 28-pin wide-DIP **socket** for a 27C128. The adapter has two three-pin jumpers, which select the two additional address bits while the Petster is unpowered.
 
 ```text
 Petster 24-pin EPROM socket ── J1 ── U1: 27C128 socket
@@ -12,6 +12,17 @@ Petster 24-pin EPROM socket ── J1 ── U1: 27C128 socket
                               JP1: A12 = 0 / 1
                               JP2: A13 = 0 / 1
 ```
+
+## Mechanical stack-up
+
+The adapter is a single, small interposer PCB:
+
+* **Bottom:** a centred 24-pin, 0.600-inch-wide male-DIP pin field. Its pins point down into the Petster ROM socket.
+* **Top:** a 28-pin, 0.600-inch-wide turned-pin or ZIF socket for the 27C128. Its pins point up.
+* **Placement:** keep both package centre-lines aligned across the board width. Offset the 28-pin land pattern by **1.27 mm (half a 2.54 mm pitch)** along its length. This prevents unlike pin pads from coinciding while keeping every trace short and leaving routing channels on both sides.
+* **Board edge:** place JP1 and JP2 where their shunts remain reachable after the board is plugged in; clearly print `A13` / `A12`, `0`, `1`, and both pin-1 marks on the silkscreen.
+
+The PCB fabricator supplies only the board. The plug pins, U1 socket, jumpers, capacitor, and 27C128 are through-hole assembly parts.
 
 ## Direct signal map
 
