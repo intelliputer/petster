@@ -89,7 +89,7 @@ Regenerate the listing with:
 
 ```sh
 python3 scripts/disassemble-mcs48.py \
-  'src/Petster Deluxe Eprom (Burnt on a 27c32 eprom).bin' \
+  'code/petster.bin' \
   src/petster_8039_linear.asm
 ```
 
