@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+  <title id="title">27C128 banked-ROM daughterboard operation</title>
+  <desc id="desc">The Petster's original 24-pin 27C32 socket feeds its address, data, control, and supply lines through a daughterboard to a 27C128. Jumpers set address lines A12 and A13 to select one of four 4 KiB banks.</desc>
+  <style>
+    .box { stroke:#17324d; stroke-width:2; rx:12; }
+    .label { font:700 20px sans-serif; fill:#11263b; }
+    .text { font:16px sans-serif; fill:#11263b; }
+    .small { font:14px sans-serif; fill:#11263b; }
+    .wire { fill:none; stroke:#286f9e; stroke-width:3; marker-end:url(#arrow); }
+    .signal { font:600 15px sans-serif; fill:#145477; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#286f9e"/></marker>
+  </defs>
+  <rect width="1000" height="540" fill="#f7fafc"/>
+  <text x="500" y="36" text-anchor="middle" class="label">27C128 daughterboard: one 4 KiB window, four selectable ROM banks</text>
+
+  <rect x="45" y="115" width="225" height="255" class="box" fill="#e7f1f8"/>
+  <text x="157" y="152" text-anchor="middle" class="label">Petster</text>
+  <text x="157" y="180" text-anchor="middle" class="text">24-pin 27C32 socket</text>
+  <text x="70" y="225" class="text">A0–A11</text>
+  <text x="70" y="253" class="text">D0–D7</text>
+  <text x="70" y="281" class="text">/CE, /OE</text>
+  <text x="70" y="309" class="text">+5 V, GND</text>
+  <text x="70" y="346" class="small">Fixed 4 KiB program window</text>
+
+  <rect x="380" y="115" width="225" height="255" class="box" fill="#fff4db"/>
+  <text x="492" y="152" text-anchor="middle" class="label">Daughterboard</text>
+  <text x="492" y="181" text-anchor="middle" class="text">24-pin plug → 28-pin socket</text>
+  <text x="405" y="224" class="text">Direct pass-through</text>
+  <text x="405" y="253" class="small">No decoding or buffering</text>
+  <text x="405" y="304" class="text">JP1: A12 = 0 / 1</text>
+  <text x="405" y="332" class="text">JP2: A13 = 0 / 1</text>
+
+  <rect x="715" y="115" width="240" height="255" class="box" fill="#e8f5e9"/>
+  <text x="835" y="152" text-anchor="middle" class="label">27C128</text>
+  <text x="835" y="181" text-anchor="middle" class="text">16 KiB × 8 EPROM</text>
+  <text x="740" y="223" class="text">A0–A13 select byte</text>
+  <text x="740" y="251" class="text">D0–D7 return data</text>
+  <text x="740" y="279" class="small">VPP and /PGM: normal read mode</text>
+  <text x="740" y="337" class="small">C1: 100 nF decoupling</text>
+
+  <path d="M270 215 H380" class="wire"/>
+  <text x="325" y="204" text-anchor="middle" class="signal">A0–A11</text>
+  <path d="M270 251 H380" class="wire"/>
+  <text x="325" y="241" text-anchor="middle" class="signal">D0–D7</text>
+  <path d="M605 215 H715" class="wire"/>
+  <text x="660" y="204" text-anchor="middle" class="signal">same signals</text>
+  <path d="M605 251 H715" class="wire"/>
+  <text x="660" y="241" text-anchor="middle" class="signal">to EPROM</text>
+
+  <rect x="46" y="414" width="908" height="82" rx="12" fill="#fff" stroke="#c5d5e0" stroke-width="2"/>
+  <text x="72" y="446" class="label">Bank selected by A13:A12:</text>
+  <text x="72" y="470" class="text">00 → 0x0000–0x0FFF (bank 0)    01 → 0x1000–0x1FFF (bank 1)</text>
+  <text x="72" y="489" class="text">10 → 0x2000–0x2FFF (bank 2)    11 → 0x3000–0x3FFF (bank 3)</text>
+</svg>
