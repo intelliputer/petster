@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Tentative Petster Deluxe MCS-48 ROM control-flow map</title>
+  <desc id="description">A diagram from reset through initialization into major inferred ROM regions, with tentative dispatch and interrupt-return paths, and erased padding.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#315f84"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfcfe; }
+      .title { font: 700 28px sans-serif; fill: #172b3a; }
+      .sub { font: 15px sans-serif; fill: #4d6270; }
+      .box { fill: #e9f3fb; stroke: #315f84; stroke-width: 2; rx: 12; }
+      .service { fill: #eef7ef; stroke: #4f7b54; stroke-width: 2; rx: 12; }
+      .tentative { fill: #fff5df; stroke: #a16a11; stroke-width: 2; stroke-dasharray: 7 5; rx: 12; }
+      .erased { fill: #f0f2f4; stroke: #6c757d; stroke-width: 2; stroke-dasharray: 5 4; rx: 12; }
+      .head { font: 700 18px sans-serif; fill: #172b3a; text-anchor: middle; }
+      .body { font: 14px sans-serif; fill: #263d4d; text-anchor: middle; }
+      .arrow { fill: none; stroke: #315f84; stroke-width: 3; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #a16a11; stroke-width: 3; stroke-dasharray: 8 6; marker-end: url(#arrow); }
+      .note { font: italic 13px sans-serif; fill: #6b4b12; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="600" y="46" text-anchor="middle">Petster Deluxe ROM: tentative MCS-48 control-flow map</text>
+  <text class="sub" x="600" y="73" text-anchor="middle">Mechanical disassembly only — range names and behavioural roles are not hardware-verified</text>
+
+  <rect class="box" x="60" y="140" width="205" height="88"/>
+  <text class="head" x="162" y="174">Reset vector</text>
+  <text class="body" x="162" y="198">0000h → JMP 0009h</text>
+
+  <rect class="box" x="340" y="125" width="250" height="118"/>
+  <text class="head" x="465" y="160">Early initialization</text>
+  <text class="body" x="465" y="185">0009h–0014h</text>
+  <text class="body" x="465" y="207">Port masking, R0 setup</text>
+  <text class="body" x="465" y="227">direct jump to 0200h</text>
+
+  <rect class="box" x="682" y="125" width="270" height="118"/>
+  <text class="head" x="817" y="160">Primary code region</text>
+  <text class="body" x="817" y="185">0200h–04A3h</text>
+  <text class="body" x="817" y="207">Main state / behaviour logic</text>
+  <text class="body" x="817" y="227">meaning not yet known</text>
+
+  <path class="arrow" d="M265 184 H340"/>
+  <path class="arrow" d="M590 184 H682"/>
+
+  <rect class="service" x="138" y="380" width="235" height="106"/>
+  <text class="head" x="255" y="414">Shared services</text>
+  <text class="body" x="255" y="440">0500h–05E3h</text>
+  <text class="body" x="255" y="462">Frequently called routines</text>
+
+  <rect class="service" x="483" y="380" width="235" height="106"/>
+  <text class="head" x="600" y="414">Utility / I/O region</text>
+  <text class="body" x="600" y="440">0600h–06C5h</text>
+  <text class="body" x="600" y="462">Port and external-memory use</text>
+
+  <rect class="service" x="827" y="380" width="235" height="106"/>
+  <text class="head" x="944" y="414">Short routines / tables</text>
+  <text class="body" x="944" y="440">0700h–079Fh</text>
+  <text class="body" x="944" y="462">Lookup-like code and returns</text>
+
+  <path class="arrow" d="M760 243 C670 288 420 296 255 380"/>
+  <path class="arrow" d="M817 243 V348 H600 V380"/>
+  <path class="arrow" d="M872 243 C950 282 965 315 944 380"/>
+  <path class="arrow" d="M255 486 C335 555 695 555 817 243"/>
+  <path class="arrow" d="M600 486 C660 536 748 514 817 243"/>
+  <path class="arrow" d="M944 486 C930 535 861 510 817 243"/>
+
+  <rect class="tentative" x="78" y="578" width="455" height="98"/>
+  <text class="head" x="305" y="612">Possible dispatch / interrupt clues</text>
+  <text class="body" x="305" y="638">JMPP @A: 0020h and 061Fh</text>
+  <text class="body" x="305" y="660">RETR: 0584h, 063Ch, 064Dh, 065Ah</text>
+  <path class="dash" d="M533 626 C650 590 730 420 817 243"/>
+  <text class="note" x="550" y="580">tentative links only</text>
+
+  <rect class="erased" x="712" y="578" width="400" height="98"/>
+  <text class="head" x="912" y="616">Erased EPROM padding</text>
+  <text class="body" x="912" y="644">0800h–0FFFh</text>
+  <text class="body" x="912" y="664">FF bytes; no preserved program content</text>
+
+  <text class="sub" x="60" y="722">Source: src/petster_8039_linear.asm · Generated from the 4 KiB ROM image with scripts/disassemble-mcs48.py</text>
+</svg>

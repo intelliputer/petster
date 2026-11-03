@@ -64,6 +64,12 @@ See [`docs/TECHNICAL-RESEARCH.md`](docs/TECHNICAL-RESEARCH.md) before working on
 
 ### Reverse-engineering status
 
-This project does not yet contain a validated disassembly. Earlier generated listings were removed because one decoded the ROM as Motorola 68HC11 instructions and another as x86; neither is valid for an MCS-48-family target.
+This project does not yet contain a validated disassembly. Earlier generated listings were removed because one decoded the ROM as Motorola 68HC11 instructions and another as x86; neither is valid for an MCS-48-family target. A reproducible, mechanical MCS-48/8039 linear listing is available at [`src/petster_8039_linear.asm`](src/petster_8039_linear.asm). It preserves every ROM byte and calculates MCS-48 branch targets, but it deliberately does not claim code-versus-data classification, labels, or behavioural analysis. Regenerate it with:
+
+```sh
+python3 scripts/disassemble-mcs48.py \
+  'src/Petster Deluxe Eprom (Burnt on a 27c32 eprom).bin' \
+  src/petster_8039_linear.asm
+```
 
 Treat `petster.bin` as the source of truth. A future disassembly should identify the exact MCS-48 tool and version, command line, ROM base address, CPU variant, and the byte ranges classified as code versus data. Contributions that add labels, hardware mappings, or behavioural analysis should cite the supporting manual, board observation, or ROM addresses.

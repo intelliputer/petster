@@ -1,0 +1,26 @@
+%% Tentative Petster Deluxe MCS-48/INS8039 ROM control-flow map.
+%% Source of the rendered diagram: rom-control-flow.svg.
+%% Keep all inferred roles explicitly tentative until validated against
+%% physical hardware observations or a control-flow/data-flow analysis.
+flowchart TD
+  R["Reset vector<br/>0000h: JMP 0009h"] --> I["Early initialization<br/>0009h–0014h<br/>Port masking and R0 setup"]
+  I --> M["Primary code region<br/>0200h–04A3h<br/>Main state / behavior logic<br/>meaning unknown"]
+
+  M --> S1["Shared services<br/>0500h–05E3h<br/>Frequently called routines"]
+  M --> S2["Utility / I/O region<br/>0600h–06C5h<br/>Port and external-memory use"]
+  M --> S3["Short routines / tables<br/>0700h–079Fh<br/>Lookup-like code and returns"]
+  S1 --> M
+  S2 --> M
+  S3 --> M
+
+  V["Possible dispatch / interrupt clues<br/>JMPP @A: 0020h, 061Fh<br/>RETR: 0584h, 063Ch, 064Dh, 065Ah"] -. tentative .-> M
+  E["Erased EPROM padding<br/>0800h–0FFFh<br/>FF bytes only"]
+
+  classDef primary fill:#e9f3fb,stroke:#315f84,stroke-width:2px,color:#172b3a;
+  classDef service fill:#eef7ef,stroke:#4f7b54,stroke-width:2px,color:#172b3a;
+  classDef tentative fill:#fff5df,stroke:#a16a11,stroke-width:2px,stroke-dasharray:7 5,color:#172b3a;
+  classDef erased fill:#f0f2f4,stroke:#6c757d,stroke-width:2px,stroke-dasharray:5 4,color:#555;
+  class R,I,M primary;
+  class S1,S2,S3 service;
+  class V tentative;
+  class E erased;
