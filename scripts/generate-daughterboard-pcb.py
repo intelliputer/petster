@@ -28,12 +28,12 @@ def footprint(ref, value, x, y):
     board.Add(fp)
     return fp
 
-def pad(fp, number, x, y, net, oval=False):
+def pad(fp, number, x, y, net, oval=False, drill=0.8):
     p = pcbnew.PAD(fp)
     p.SetNumber(str(number))
     p.SetPosition(pos(x, y))
     p.SetSize(pcbnew.VECTOR2I(MM(1.5), MM(1.5)))
-    p.SetDrillSize(pcbnew.VECTOR2I(MM(0.8), MM(0.8)))
+    p.SetDrillSize(pcbnew.VECTOR2I(MM(drill), MM(drill)))
     p.SetAttribute(pcbnew.PAD_ATTRIB_PTH)
     p.SetShape(pcbnew.PAD_SHAPE_OVAL if oval else pcbnew.PAD_SHAPE_CIRCLE)
     p.SetLayerSet(pcbnew.LSET.AllCuMask())
@@ -63,8 +63,10 @@ for a, b in [((11,5),(49,5)), ((49,5),(49,50)), ((49,50),(11,50)), ((11,50),(11,
 j1 = footprint("J1", "24-pin male DIP plug to Petster NMC27C32 socket", 0, 0)
 j1nets = {1:"A7",2:"A6",3:"A5",4:"A4",5:"A3",6:"A2",7:"A1",8:"A0",9:"D0",10:"D1",11:"D2",12:"GND",13:"D3",14:"D4",15:"D5",16:"D6",17:"D7",18:"~CE",19:"A10",20:"~OE",21:"A11",22:"A9",23:"A8",24:"+5V"}
 j1pads = {}
-for n in range(1,13): j1pads[n] = pad(j1,n,17.34,16.07+(n-1)*2.54,j1nets[n],n==1)
-for n in range(24,12,-1): j1pads[n] = pad(j1,n,32.58,16.07+(24-n)*2.54,j1nets[n])
+# Match the M6x09-II-SBC expansion header's smaller 0.7 mm drill while
+# retaining J1's existing pad positions, copper, nets, and routing.
+for n in range(1,13): j1pads[n] = pad(j1,n,17.34,16.07+(n-1)*2.54,j1nets[n],n==1,drill=0.7)
+for n in range(24,12,-1): j1pads[n] = pad(j1,n,32.58,16.07+(24-n)*2.54,j1nets[n],drill=0.7)
 
 u1 = footprint("U1", "27C128 wide DIP-28 socket", 0, 0)
 u1nets = {1:"+5V",2:"A12_BANK",3:"A7",4:"A6",5:"A5",6:"A4",7:"A3",8:"A2",9:"A1",10:"A0",11:"D0",12:"D1",13:"D2",14:"GND",15:"D3",16:"D4",17:"D5",18:"D6",19:"D7",20:"~CE",21:"A10",22:"~OE",23:"A11",24:"A9",25:"A8",26:"A13_BANK",27:"+5V",28:"+5V"}

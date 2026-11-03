@@ -143,7 +143,7 @@
 		(pad "1" thru_hole oval
 			(at 17.34 16.07)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A7")
@@ -153,7 +153,7 @@
 		(pad "2" thru_hole circle
 			(at 17.34 18.61)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A6")
@@ -162,7 +162,7 @@
 		(pad "3" thru_hole circle
 			(at 17.34 21.15)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A5")
@@ -171,7 +171,7 @@
 		(pad "4" thru_hole circle
 			(at 17.34 23.69)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A4")
@@ -180,7 +180,7 @@
 		(pad "5" thru_hole circle
 			(at 17.34 26.23)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A3")
@@ -189,7 +189,7 @@
 		(pad "6" thru_hole circle
 			(at 17.34 28.77)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A2")
@@ -198,7 +198,7 @@
 		(pad "7" thru_hole circle
 			(at 17.34 31.31)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A1")
@@ -207,7 +207,7 @@
 		(pad "8" thru_hole circle
 			(at 17.34 33.85)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A0")
@@ -216,7 +216,7 @@
 		(pad "9" thru_hole circle
 			(at 17.34 36.39)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D0")
@@ -225,7 +225,7 @@
 		(pad "10" thru_hole circle
 			(at 17.34 38.93)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D1")
@@ -234,7 +234,7 @@
 		(pad "11" thru_hole circle
 			(at 17.34 41.47)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D2")
@@ -243,7 +243,7 @@
 		(pad "12" thru_hole circle
 			(at 17.34 44.01)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
@@ -252,7 +252,7 @@
 		(pad "13" thru_hole circle
 			(at 32.58 44.01)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D3")
@@ -261,7 +261,7 @@
 		(pad "14" thru_hole circle
 			(at 32.58 41.47)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D4")
@@ -270,7 +270,7 @@
 		(pad "15" thru_hole circle
 			(at 32.58 38.93)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D5")
@@ -279,7 +279,7 @@
 		(pad "16" thru_hole circle
 			(at 32.58 36.39)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D6")
@@ -288,7 +288,7 @@
 		(pad "17" thru_hole circle
 			(at 32.58 33.85)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D7")
@@ -297,7 +297,7 @@
 		(pad "18" thru_hole circle
 			(at 32.58 31.31)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "~CE")
@@ -306,7 +306,7 @@
 		(pad "19" thru_hole circle
 			(at 32.58 28.77)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A10")
@@ -315,7 +315,7 @@
 		(pad "20" thru_hole circle
 			(at 32.58 26.23)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "~OE")
@@ -324,7 +324,7 @@
 		(pad "21" thru_hole circle
 			(at 32.58 23.69)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A11")
@@ -333,7 +333,7 @@
 		(pad "22" thru_hole circle
 			(at 32.58 21.15)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A9")
@@ -342,7 +342,7 @@
 		(pad "23" thru_hole circle
 			(at 32.58 18.61)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A8")
@@ -351,7 +351,7 @@
 		(pad "24" thru_hole circle
 			(at 32.58 16.07)
 			(size 1.5 1.5)
-			(drill 0.8)
+			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
