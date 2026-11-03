@@ -3604,22 +3604,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "FTDI Friend: TXO → T0_RX; P2.7 → RXI. CTS/DTR NC in Rev A. VCC only via JP6."
-		(exclude_from_sim no)
-		(at -45.212 138.684 0)
-		(effects
-			(font
-				(size 1.397 1.397)
-				(thickness 0.2794)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "2979d884-e0d3-467c-94e1-761bbcf8a2b4")
-	)
 	(text "Universal ROM socket and bank controls"
 		(exclude_from_sim no)
-		(at 203.2 59.69 0)
+		(at 219.71 91.44 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3645,7 +3632,7 @@
 	)
 	(text "Latched low address"
 		(exclude_from_sim no)
-		(at 139.954 44.196 0)
+		(at 146.812 48.514 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3655,19 +3642,6 @@
 			(justify left bottom)
 		)
 		(uuid "56c766e5-62f2-4d58-bc71-712f7116fea5")
-	)
-	(text "Never change ROM-type or bank shunts while powered. Fit every address-select shunt."
-		(exclude_from_sim no)
-		(at 181.61 144.272 0)
-		(effects
-			(font
-				(size 1.397 1.397)
-				(thickness 0.2794)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "5ebe338c-c317-410a-8947-fda4a95060dd")
 	)
 	(text "Socket a confirmed 8039-compatible MCU. Configure EA for external program fetches per its datasheet."
 		(exclude_from_sim no)
@@ -3682,19 +3656,6 @@
 		)
 		(uuid "6838e1af-174e-41ca-874a-95562eac4012")
 	)
-	(text "Fit C4–C6: 100 nF ceramic, one at each IC supply pair. Add bulk capacitance at +5 V input."
-		(exclude_from_sim no)
-		(at 115.57 138.43 0)
-		(effects
-			(font
-				(size 1.397 1.397)
-				(thickness 0.2794)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "7048abee-3c00-4497-bca7-9b3ec4d4d3fe")
-	)
 	(text "MCS-48 multiplexed bus"
 		(exclude_from_sim no)
 		(at 188.976 24.13 0)
@@ -3708,19 +3669,6 @@
 		)
 		(uuid "76eb85f1-bcdf-4852-a8f6-ae317aa0dbd0")
 	)
-	(text "U3 PIN-27 MODE: 27C128 requires +5 V (/PGM read mode); 27C256 uses selectable A14."
-		(exclude_from_sim no)
-		(at 181.61 140.97 0)
-		(effects
-			(font
-				(size 1.397 1.397)
-				(thickness 0.2794)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "9e72f57b-8253-4314-a44f-9ef9fcda78fd")
-	)
 	(text "8039-II-SBC — EXTERNAL-ROM MCS-48 BENCH COMPUTER"
 		(exclude_from_sim no)
 		(at 24.13 20.32 0)
@@ -3733,19 +3681,6 @@
 			(justify left bottom)
 		)
 		(uuid "d6a1bf35-367f-46cd-91d1-3e0672051c3b")
-	)
-	(text "This schematic intentionally records the reviewed architecture before component-pin wiring/ERC. Complete it against the exact 8039 and EPROM datasheets before PCB layout."
-		(exclude_from_sim no)
-		(at 22.86 177.8 0)
-		(effects
-			(font
-				(size 1.397 1.397)
-				(thickness 0.2794)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "ea2f0c91-8e07-4a0e-bb28-03fe799a2758")
 	)
 	(junction
 		(at 120.65 76.2)
