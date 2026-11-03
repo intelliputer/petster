@@ -12,10 +12,13 @@ The central artifact is a 4 KiB ROM image. The 8039 is an Intel MCS-48-family co
 
 | Path | Purpose |
 | --- | --- |
-| [`code/petster.bin`](code/petster.bin) | Canonical 4,096-byte ROM image. |
+| [`code/petster.bin`](code/petster.bin) | Preserved 4,096-byte baseline ROM image. |
 | [`code/petster.hex`](code/petster.hex) | Intel HEX encoding of the canonical ROM. |
 | [`code/petster-array`](code/petster-array) | C-style byte-array representation. |
 | [`code/PetsterDeluxeEprom.zip`](code/PetsterDeluxeEprom.zip) | Original-style archive containing the same ROM payload. |
+| [`src/README.md`](src/README.md) | Read-only procedure for dumping the EPROM from the working Petster with the Barlino II. |
+| [`src/petster_8039_linear.asm`](src/petster_8039_linear.asm) | Reproducible mechanical MCS-48/INS8039 assembly-style listing. |
+| [`src/ROM-CONTROL-FLOW.md`](src/ROM-CONTROL-FLOW.md) | Tentative ROM control-flow map, with editable Mermaid source and SVG. |
 | [`docs/`](docs) | Owner's manual, technical guide, and reference material. |
 | [`docs/TECHNICAL-RESEARCH.md`](docs/TECHNICAL-RESEARCH.md) | Sourced 1985 hardware findings, preserved teardown, and open questions. |
 | [`datasheets/`](datasheets) | INS8039-family reference datasheet. |
@@ -34,8 +37,9 @@ against the NMC27C32B and 27C128 datasheets.
 | --- | --- |
 | KiCad source | [`hardware/27c128-daughterboard/`](hardware/27c128-daughterboard/) |
 | PCB | Routed, 45 × 45 mm, two copper layers, 0.20 mm tracks |
-| Electrical rules check | 0 violations; 0 unconnected items (KiCad, 2026-11-02) |
+| Electrical rules check | 0 violations; 0 unconnected items in the prior KiCad check (2026-11-02); rerun before fabrication |
 | Production archive | [`27c128-daughterboard.zip`](hardware/27c128-daughterboard/production/27c128-daughterboard.zip) |
+| Latest fabrication export | Regenerated with KiCad 10.0.8 on 2026-11-03; J1 is now a 0.7 mm drilled 24-pin wide-DIP plug footprint |
 | Solder mask | Present on both sides and on all plated pads |
 | Hardware test | Pending continuity checks, then a controlled power-on test in the Petster |
 
@@ -44,9 +48,11 @@ and external-ROM signals. Fit C1, both bank-select shunts, the 24-pin male
 plug, and the 28-pin socket before use. Do not change bank jumpers while the
 Petster is powered.
 
-### Integrity and provenance
+### ROM integrity and physical provenance
 
-The ZIP payload and Intel HEX file both resolve byte-for-byte to `code/petster.bin`. The canonical ROM is 4,096 bytes and has this SHA-256 digest:
+The ZIP payload, Intel HEX file, `src` binary, and C-style byte array resolve
+byte-for-byte to the preserved baseline image. The image is 4,096 bytes and
+has this SHA-256 digest:
 
 ```text
 609d6505297a6365abb4fdbd869a2d76aad65ebd2accc628e37023a11ffefee9
@@ -60,16 +66,54 @@ Run the following from the repository root to verify those representations:
 
 The check requires standard POSIX utilities plus `unzip`, GNU `objcopy`, and `sha256sum`.
 
+This proves that the repository copies agree; it does **not** prove the image
+matches the ROM in any particular Petster Deluxe. The working Petster's EPROM
+is the authority for that unit. Use the read-only
+[`src/README.md`](src/README.md) procedure to make two independent Barlino II
+reads, compare those reads with each other, then compare their hashes with the
+baseline. Preserve a matching but different image as a separately documented
+ROM revision.
+
 See [`docs/TECHNICAL-RESEARCH.md`](docs/TECHNICAL-RESEARCH.md) before working on hardware. It records the 1985 external-ROM architecture, the ROM's verified used range, and the checks needed before attaching an adapter.
 
 ### Reverse-engineering status
 
-This project does not yet contain a validated disassembly. Earlier generated listings were removed because one decoded the ROM as Motorola 68HC11 instructions and another as x86; neither is valid for an MCS-48-family target. A reproducible, mechanical MCS-48/8039 linear listing is available at [`src/petster_8039_linear.asm`](src/petster_8039_linear.asm). It preserves every ROM byte and calculates MCS-48 branch targets, but it deliberately does not claim code-versus-data classification, labels, or behavioural analysis. Regenerate it with:
+This project does not yet contain a validated disassembly. Earlier generated listings were removed because one decoded the ROM as Motorola 68HC11 instructions and another as x86; neither is valid for an MCS-48-family target. A reproducible, mechanical MCS-48/8039 linear listing is available at [`src/petster_8039_linear.asm`](src/petster_8039_linear.asm). It preserves every ROM byte and calculates MCS-48 branch targets, but it deliberately does not claim code-versus-data classification, labels, or behavioural analysis.
+
+The tentative map is available as [documentation](src/ROM-CONTROL-FLOW.md),
+[editable Mermaid source](src/rom-control-flow.mmd), and a rendered
+[SVG](src/rom-control-flow.svg). Update the Mermaid source before regenerating
+the SVG as analysis improves.
+
+Regenerate the listing with:
 
 ```sh
 python3 scripts/disassemble-mcs48.py \
   'src/Petster Deluxe Eprom (Burnt on a 27c32 eprom).bin' \
   src/petster_8039_linear.asm
 ```
+
+#### How the listing was produced
+
+1. The target was selected as the Intel MCS-48/INS8039 family from the
+   external-ROM hardware evidence, rather than decoding the bytes as an
+   unrelated CPU architecture.
+2. [`scripts/disassemble-mcs48.py`](scripts/disassemble-mcs48.py) performs a
+   deterministic linear sweep of the 4 KiB image. Its opcode definitions were
+   cross-checked against the bundled historical 8048 disassembler source in
+   [`tools/8048/8048dis.zip`](tools/8048/8048dis.zip).
+3. The script decodes documented instruction forms, calculates `JMP` and
+   `CALL` targets from their MCS-48 page fields, and calculates conditional
+   branch targets within their current 256-byte page. Undefined opcodes are
+   retained as `DB` directives. Long runs of erased `FF` bytes are likewise
+   retained as `DB` directives rather than treated as executable code.
+4. Every listing line includes its original address and bytes in a comment.
+   The generated listing was parsed back into 4,096 bytes and compared
+   byte-for-byte with the input image.
+
+This method establishes a reproducible instruction-level view of the bytes;
+it does not determine whether a decoded sequence is reachable code, embedded
+data, a jump table, or an interrupt vector. Those classifications need
+control-flow analysis plus observations from the physical Petster.
 
 Treat `petster.bin` as the source of truth. A future disassembly should identify the exact MCS-48 tool and version, command line, ROM base address, CPU variant, and the byte ranges classified as code versus data. Contributions that add labels, hardware mappings, or behavioural analysis should cite the supporting manual, board observation, or ROM addresses.
