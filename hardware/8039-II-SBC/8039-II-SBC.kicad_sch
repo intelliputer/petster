@@ -7808,8 +7808,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "file://../../datasheets/switch.pdf"
 			(at 22.86 39.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7818,8 +7819,9 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Same Sky TS02-66-43-BK-100-LCR-D, 6x6mm THT tactile switch"
 			(at 22.86 39.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

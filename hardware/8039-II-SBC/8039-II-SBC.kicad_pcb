@@ -3467,7 +3467,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "file://../../datasheets/switch.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3480,7 +3480,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Same Sky TS02-66-43-BK-100-LCR-D, 6x6mm THT tactile switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
