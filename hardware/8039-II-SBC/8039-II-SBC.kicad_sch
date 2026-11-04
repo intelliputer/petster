@@ -4586,6 +4586,10 @@
 		(uuid "fb0b672c-bf1a-4810-b3d4-1329f7c3ba2d")
 	)
 	(no_connect
+		(at 34.29 92.71)
+		(uuid "05433022-3851-4469-8038-42639aac9489")
+	)
+	(no_connect
 		(at 29.21 92.71)
 		(uuid "60cd922a-3756-498f-a4c8-a3b33b637aa0")
 	)
@@ -6307,16 +6311,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 92.71) (xy 34.29 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4180b6c-22e1-4b78-877f-8b55ad1809dc")
-	)
-	(wire
-		(pts
 			(xy 71.12 60.96) (xy 31.75 60.96)
 		)
 		(stroke
@@ -8023,84 +8017,6 @@
 			(project "8039-II-SBC"
 				(path "/86751c73-82d5-46d1-a6c9-38b07ca59e42"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 34.29 100.33 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "101bdd4e-8658-4930-b2bb-e44591fa2093")
-		(property "Reference" "#FLG03"
-			(at 34.29 102.235 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 34.29 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 34.29 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b69f87fc-e7af-4dbd-9df6-d40ade51dc05")
-		)
-		(instances
-			(project "8039-II-SBC"
-				(path "/86751c73-82d5-46d1-a6c9-38b07ca59e42"
-					(reference "#FLG03")
 					(unit 1)
 				)
 			)

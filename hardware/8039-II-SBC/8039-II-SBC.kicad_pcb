@@ -336,10 +336,11 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "2e451054-563a-4b03-b612-fcb6ad9a7202")
-		(at 175 55)
+		(at 176 55)
 		(property "Reference" "H2"
-			(at 0 -4.15 0)
+			(at 2 -1 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "e0fa5335-5da7-49b7-854a-a5bb6fd24ce5")
 			(effects
 				(font
@@ -1957,7 +1958,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "67885160-ff63-45b7-9c9a-1786c1fc7383")
-		(at 168 83)
+		(at 165 62.46)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "JP1"
@@ -2210,7 +2211,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "6f07ec1b-a369-405e-a0a2-78c0d3570aca")
-		(at 174 83)
+		(at 171 62.46)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "JP2"
@@ -3418,9 +3419,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_18)")
+			(net "unconnected-(J2-Pin_18-Pad18)")
 			(pinfunction "Pin_18_18")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "14b0470b-4356-47c6-b9bf-8ea685a66e25")
 		)
 		(pad "19" thru_hole circle
@@ -3461,7 +3462,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "a119503a-3d27-4925-94ee-bb14d6557a80")
-		(at 168 95)
+		(at 165 80.46)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "JP5"
@@ -3990,10 +3991,11 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "b27498ba-507d-4782-ac15-283a653a0d03")
-		(at 85 125)
+		(at 84 117)
 		(property "Reference" "H3"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "c9ce428d-225f-4eda-aebb-f1ef9b59f1fd")
 			(effects
 				(font
@@ -4072,10 +4074,11 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "ca5c0dd7-5e58-41fd-bfb5-8e9c6c3d3a04")
-		(at 175 125)
+		(at 176 117)
 		(property "Reference" "H4"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "e4e9f11a-9e4a-4e79-b574-1bcfc6505e85")
 			(effects
 				(font
@@ -4346,11 +4349,12 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "e0e3c9b0-bd75-4ec3-bc6f-5b4f007f3101")
-		(at 85 55)
+		(at 84 55)
 		(property "Reference" "H1"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
-			(uuid "0e730fe1-8580-4f3f-960a-97ef8e3930d0")
+			(hide yes)
+			(uuid "31abc3b6-20b4-4441-93ce-374e786c3362")
 			(effects
 				(font
 					(size 1 1)
@@ -4362,7 +4366,7 @@
 			(at 0 4.15 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1257f88e-5efb-4eb3-bc88-8b6a6727ea71")
+			(uuid "5a7dce75-39bd-4375-a634-a8f6e28e2bcd")
 			(effects
 				(font
 					(size 1 1)
@@ -4374,7 +4378,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8d919820-f7b6-467a-973e-d8c711aaacb8")
+			(uuid "7ecded28-ca31-4980-8416-bb1fbeaae309")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4389,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e60fb5cc-aa6e-4d63-8728-bcc4068ea20c")
+			(uuid "39d5a66a-a851-42a5-be5c-b8f41e69236e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5233,7 +5237,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "fefde7a2-9587-4942-9517-cf444d5b4c00")
-		(at 174 95)
+		(at 171 82)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "JP6"
@@ -5473,8 +5477,8 @@
 		)
 	)
 	(gr_rect
-		(start 80 50)
-		(end 180 130)
+		(start 80 51)
+		(end 180 121)
 		(stroke
 			(width 0.25)
 			(type default)
@@ -5496,7 +5500,7 @@
 		)
 	)
 	(gr_text "EXPANSION"
-		(at 133 115 0)
+		(at 132 114 0)
 		(layer "F.SilkS")
 		(uuid "1fb242e6-cadd-4335-84e0-c389b9678a5b")
 		(effects
@@ -5507,10 +5511,58 @@
 			(justify left top)
 		)
 	)
-	(gr_text "EXPANSION\n1 P1.0   2 P1.1\n3 P1.2   4 P1.3\n5 P1.4   6 P1.5\n7 P1.6   8 P1.7\n9 P2.4  10 P2.5\n11 P2.6 12 T1\n13 PROG 14 /RD\n15 /WR  16 /INT\n17 /SS  18 +5V\n19 GND  20 NC"
-		(at 155 109 0)
+	(gr_text "1 P1.0   2 P1.1\n3 P1.2   4 P1.3\n5 P1.4   6 P1.5\n7 P1.6   8 P1.7\n9 P2.4  10 P2.5\n11 P2.6 12 T1\n13 PROG 14 /RD\n15 /WR  16 /INT\n17 /SS  18 +5V\n19 GND  20 NC"
+		(at 154 101 0)
 		(layer "F.SilkS")
 		(uuid "0d53accc-bad2-43f8-91a4-e8d83d9b7b21")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "ROM A12 SEL"
+		(at 167 69 90)
+		(layer "F.SilkS")
+		(uuid "0f14e5a7-14d5-40f1-9ddc-3900f8c76b85")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "EXT PROGRAM MEMORY SEL "
+		(at 167 91 90)
+		(layer "F.SilkS")
+		(uuid "829c300c-f0ab-4741-9241-7fc601a1788a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "ROM A13 SEL"
+		(at 173 69 90)
+		(layer "F.SilkS")
+		(uuid "55043071-f071-4a32-835d-e9414455943e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "FTDI-USB POWER"
+		(at 173 88 90)
+		(layer "F.SilkS")
+		(uuid "68741ee8-c35b-4a66-ada9-cdad54736144")
 		(effects
 			(font
 				(size 0.8 0.8)
