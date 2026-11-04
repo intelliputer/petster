@@ -333,6 +333,186 @@
 			)
 		)
 	)
+	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(layer "F.Cu")
+		(uuid "234a5e21-df1c-40d3-8116-c4dffb91721e")
+		(at 146.5 55)
+		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
+		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
+		(property "Reference" "C6"
+			(at 1.25 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "79f31b1d-134a-4bb0-afc5-a09de6ad699b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 1.25 2.5 0)
+			(layer "F.Fab")
+			(uuid "2cffc338-f653-4278-8493-42e38664aa4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "687680ea-f425-498b-a8e9-de2c08911d82")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19785c3d-23b1-4a7e-95bc-98199d30d838")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "capacitor/THT/other"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a8bee02b-89b4-4b7c-a150-cbae05424983")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/b7bdb9c9-7569-4b3a-ae3b-eb14e28b27e0")
+		(sheetname "/")
+		(sheetfile "8039-II-SBC.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.37 -1.37)
+			(end 3.87 -1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96256d58-ed8c-4ce5-b0b3-f914432a39e6")
+		)
+		(fp_line
+			(start -1.37 1.37)
+			(end -1.37 -1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "013a4fb8-fadf-4e7c-9e48-7609313d1725")
+		)
+		(fp_line
+			(start 3.87 -1.37)
+			(end 3.87 1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b97a9b64-783b-4122-ad9c-1a8ab9078b38")
+		)
+		(fp_line
+			(start 3.87 1.37)
+			(end -1.37 1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b1f067f1-8da5-4bd8-8f86-52e77a57fbd7")
+		)
+		(fp_rect
+			(start -1.5 -1.5)
+			(end 4 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5bbc9264-9e1a-43e7-b94e-cd03e87ccf11")
+		)
+		(fp_rect
+			(start -1.25 -1.25)
+			(end 3.75 1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "dae241f6-ccf7-4ae3-bda1-bc5b6d899fc0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.25 0 0)
+			(layer "F.Fab")
+			(uuid "5db4bce4-9887-4aa7-8933-bc38d9a9c064")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pintype "passive")
+			(uuid "ab583c2d-5eec-4c7e-9dac-aba9864a7cf1")
+		)
+		(pad "2" thru_hole circle
+			(at 2.5 0)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+5V")
+			(pintype "passive")
+			(uuid "10a55ea3-fed0-4ef2-93e4-4871d1c0d2c8")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P2.50mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "2e451054-563a-4b03-b612-fcb6ad9a7202")
@@ -416,10 +596,190 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(layer "F.Cu")
+		(uuid "3c2db7f0-33aa-4e71-8cf3-92af168ac0a9")
+		(at 125 62)
+		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
+		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
+		(property "Reference" "C5"
+			(at 1.25 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "a88fea31-7ff5-4c1a-a0ce-7509c2b6c8cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 1.25 2.5 0)
+			(layer "F.Fab")
+			(uuid "b588ced5-c544-4bfe-84b8-eb77d1c4db23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "524c61a5-2c51-4a79-b8d5-42cb640be6e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "755e7b5b-12d6-4d27-8bd7-8af2c6e16c09")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "capacitor/THT/other"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7b9344d8-d08c-4448-8242-57867161800a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/b7377a8c-7a16-4749-a27e-a76862ecd424")
+		(sheetname "/")
+		(sheetfile "8039-II-SBC.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.37 -1.37)
+			(end 3.87 -1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6e5f8fe0-7111-4b3d-9a69-6eb761c571e4")
+		)
+		(fp_line
+			(start -1.37 1.37)
+			(end -1.37 -1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "017797ed-7440-4bb4-a3ce-3d58a0049104")
+		)
+		(fp_line
+			(start 3.87 -1.37)
+			(end 3.87 1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4b0fc9cd-fa0c-4308-ba2d-9c81e2fc8e32")
+		)
+		(fp_line
+			(start 3.87 1.37)
+			(end -1.37 1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f961d026-9b1a-4e49-a4b8-737ba72ee232")
+		)
+		(fp_rect
+			(start -1.5 -1.5)
+			(end 4 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "fc57bc92-f1f8-4fb3-ab5c-4e2719719743")
+		)
+		(fp_rect
+			(start -1.25 -1.25)
+			(end 3.75 1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "d956e9a6-64f9-4207-ba81-bbfff0afbc03")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.25 0 0)
+			(layer "F.Fab")
+			(uuid "cbeb7f79-252c-41bc-9cff-e955e01223ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pintype "passive")
+			(uuid "78aa6e1f-f591-4160-9383-0172a2dbe0bd")
+		)
+		(pad "2" thru_hole circle
+			(at 2.5 0)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+5V")
+			(pintype "passive")
+			(uuid "63f3fbf6-dac4-4c05-8819-66cc8cee1b40")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P2.50mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3de49758-8dd9-4427-a83e-14a6e4cb64a1")
-		(at 126 60 90)
+		(at 122.38 56 90)
 		(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x06 2.54mm single row")
 		(property "Reference" "J1"
@@ -2716,6 +3076,186 @@
 	)
 	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 		(layer "F.Cu")
+		(uuid "7952916d-d5e7-4798-ba44-36bbabd9e4d5")
+		(at 102.5 55)
+		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
+		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
+		(property "Reference" "C4"
+			(at 1.25 -2.5 0)
+			(layer "F.SilkS")
+			(uuid "ec970a45-b271-4255-a590-d985b812210d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 1.25 2.5 0)
+			(layer "F.Fab")
+			(uuid "4c0c7df5-1a45-4482-9957-bcffa40e10b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e10ad306-d88b-48eb-9b0d-1a1f0c9dae06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f16e4710-2e12-4b05-b676-785cad040c1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "capacitor/THT/other"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "38315b71-a004-4a8b-9da2-1574647e3d92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/7d8ed433-4204-47aa-8a3c-25b2c3c58567")
+		(sheetname "/")
+		(sheetfile "8039-II-SBC.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.37 -1.37)
+			(end 3.87 -1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5c9c8e8b-7888-4fde-8eee-2fc034423bba")
+		)
+		(fp_line
+			(start -1.37 1.37)
+			(end -1.37 -1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "24173bfa-5ced-4c5d-8e8e-9309d1040139")
+		)
+		(fp_line
+			(start 3.87 -1.37)
+			(end 3.87 1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "87245c17-1898-4739-866f-2da772105a90")
+		)
+		(fp_line
+			(start 3.87 1.37)
+			(end -1.37 1.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a5fb3908-16f8-4410-a879-8653068808d1")
+		)
+		(fp_rect
+			(start -1.5 -1.5)
+			(end 4 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9c9e290c-6634-44f9-a420-bdc74c21a069")
+		)
+		(fp_rect
+			(start -1.25 -1.25)
+			(end 3.75 1.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "48f193cd-27c3-4e23-b9ff-6a3cc41b1f79")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.25 0 0)
+			(layer "F.Fab")
+			(uuid "50248227-7ec4-47cf-9d43-086a0967591d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pintype "passive")
+			(uuid "d33d8e11-0624-4679-98a2-fd9239452d42")
+		)
+		(pad "2" thru_hole circle
+			(at 2.5 0)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+5V")
+			(pintype "passive")
+			(uuid "9f89b61a-e867-43ca-a86d-a11bc32073a0")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P2.50mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(layer "F.Cu")
 		(uuid "8207d2b0-49bf-4b16-8b31-08df05cfa776")
 		(at 92 73)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
@@ -2731,7 +3271,7 @@
 				)
 			)
 		)
-		(property "Value" "22pF DNP/verify"
+		(property "Value" "20pF COG"
 			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5206,7 +5746,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF RESET"
+		(property "Value" "0.1uF"
 			(at 1 3.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5830,7 +6370,7 @@
 				)
 			)
 		)
-		(property "Value" "22pF DNP/verify"
+		(property "Value" "20pF COG"
 			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6310,7 +6850,7 @@
 		)
 	)
 	(gr_text "FTDI\nGND    VCC TXO RXI"
-		(at 131 56 0)
+		(at 127.38 52 0)
 		(layer "F.SilkS")
 		(uuid "1fd262df-e3ee-4457-8e8a-38a022b1f58b")
 		(effects
@@ -6452,6 +6992,66 @@
 			)
 			(justify left top)
 		)
+	)
+	(gr_text_box "JP5 EA:\n8039: set EA to +5V (external ROM).\n8048: set EA to GND (internal ROM).\n\nJP6 POWER:\n1–2: power from FTDI VCC.\n2–3: power from J2 pin 18.\nFIT ONE POWER JUMPER ONLY."
+		(start 120 95)
+		(end 148.5 107.307686)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "B.Mask")
+		(uuid "5fd07037-6d89-4968-9f74-5a14a5141c4f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left top mirror)
+		)
+		(border yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(knockout no)
+	)
+	(gr_text_box "JP1 A12 / JP2 A13: Select 4K ROM page.\nGND = 0, +5V = 1.\n\nJP3 A14/PGM / JP4 A15/VPP:\n* 27C128: set both to +5V.\n* 27C256: select 16K ROM bank\n(GND = 0, +5V = 1)."
+		(start 148.5 95)
+		(end 177 106.019731)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "B.Mask")
+		(uuid "a4c4fab6-8fb8-417b-bb9a-3cb970e56a41")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left top mirror)
+		)
+		(border yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(knockout no)
+	)
+	(gr_text_box "JUMPER SETTINGS\n\n"
+		(start 162 91)
+		(end 177 95)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "B.Mask")
+		(uuid "8e4fd218-3a67-4b03-add5-c11c20ea7e15")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left top mirror)
+		)
+		(border yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(knockout no)
 	)
 	(segment
 		(start 94.5 73)
