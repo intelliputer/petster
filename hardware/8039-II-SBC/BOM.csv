@@ -1,16 +1,19 @@
-Item,Quantity,References,Value / function,Footprint,Procurement status
-1,1,C1,1uF RESET,Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm,Select 1uF radial electrolytic or suitable polarized capacitor
-2,2,"C2,C3",22pF DNP/verify,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,DNP until Y1 is selected; calculate from crystal load capacitance
-3,1,D1,1N4148 reset discharge,Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal,Select 1N4148 or compatible DO-35 diode
-4,1,J1,FTDI FRIEND 1x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,Generic 2.54mm 1x06 header
-5,1,J2,Expansion 2x10,Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical,Generic 2.54mm 2x10 header
-6,1,JP1,A12 bank select,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Generic 2.54mm 1x03 header and 2-pin shunt
-7,1,JP2,A13 bank select,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Generic 2.54mm 1x03 header and 2-pin shunt
-8,1,JP5,EA program-memory select,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Generic 2.54mm 1x03 header and 2-pin shunt
-9,1,JP6,FTDI VCC / 5V / J2.18 power select,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Generic 2.54mm 1x03 header and 2-pin shunt
-10,1,R1,100k RESET pull-up,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,Select 100k axial resistor
-11,1,SW1,RESET,Button_Switch_THT:SW_PUSH_6mm_H5mm,Select 6mm THT momentary pushbutton
-12,1,U1,8039 external-ROM MCS-48 MCU,Package_DIP:DIP-40_W15.24mm_Socket,Use a confirmed 6MHz-or-faster 8039-compatible PDIP-40; INS8039N-6 is a candidate
-13,1,U2,74LS373,Package_DIP:DIP-20_W7.62mm_Socket,Select 74LS373 in PDIP-20
-14,1,U3,27C128 / 27C256 / offset 27C32,Package_DIP:DIP-28_W15.24mm_Socket,Select compatible 27C-series EPROM and program firmware
-15,1,Y1,6MHz — 8039.6,Crystal:Crystal_HC49-U_Vertical,Select <=6MHz HC-49/U crystal; 5MHz stock crystal is electrically suitable with C2/C3 recalculated
+"References","Value","Footprint","Datasheet","Quantity","DNP"
+"C1","1uF","Capacitor_THT:CP_Radial_D5.0mm_P2.50mm","","1",""
+"C2,C3","20pF COG","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","2",""
+"C4-C6","0.1uF","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","3",""
+"D1","1N4148 reset discharge","Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal","","1",""
+"J1","FTDI FRIEND: GND CTS VCC TXO RXI DTR","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical","","1",""
+"J2","Conn_02x10_Counter_Clockwise","Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical","","1",""
+"JP1","A12: GND / A12 / +5V","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","1",""
+"JP2","A13: GND / A13 / +5V","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","1",""
+"JP3","A14/PGM: GND / A14/PGM / +5V","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","1",""
+"JP4","A15/VPP: GND / A15/VPP / +5V","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","1",""
+"JP5","EA","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","1",""
+"JP6","FTDI VCC - 5V - J2.18","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","1",""
+"R1","100k RESET pull-up","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","1",""
+"SW1","RESET","Button_Switch_THT:SW_PUSH_6mm_H5mm","","1",""
+"U1","8039","Package_DIP:DIP-40_W15.24mm_Socket","kicad-embed://INS8039.pdf","1",""
+"U2","74LS373","Package_DIP:DIP-20_W7.62mm_Socket","","1",""
+"U3","27C128 / 27C256","Package_DIP:DIP-28_W15.24mm_Socket","","1",""
+"Y1","6MHz — 8039.6","Crystal:Crystal_HC49-U_Vertical","","1",""
