@@ -599,7 +599,7 @@
 	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "3c2db7f0-33aa-4e71-8cf3-92af168ac0a9")
-		(at 125 62)
+		(at 124 63)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C5"
@@ -3438,7 +3438,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 		(layer "F.Cu")
 		(uuid "840e3d54-86ef-4ce7-a3d9-2e71ed316650")
-		(at 85.75 98.75)
+		(at 86.75 100.75)
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW1"
@@ -5732,7 +5732,7 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "e216455c-b1d0-41ba-9b15-5a9cb7d26608")
-		(at 88 92)
+		(at 89 94)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=5mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 5mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C1"
@@ -6778,7 +6778,7 @@
 		)
 	)
 	(gr_text "RESET"
-		(at 87 105 0)
+		(at 88 107 0)
 		(layer "F.SilkS")
 		(uuid "4f2a567b-1486-4122-a994-aaad1121ee4e")
 		(effects
@@ -6813,18 +6813,6 @@
 			(justify left top)
 		)
 	)
-	(gr_text "8048-Series Single Board Computer"
-		(at 153 107 0)
-		(layer "F.SilkS")
-		(uuid "b93efebf-4a7f-4973-a3a6-a229883e12dd")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.13)
-			)
-			(justify left top)
-		)
-	)
 	(gr_text "Choose Y1 for\n8048-series clock\ninput frequency"
 		(at 92 65 0)
 		(layer "F.SilkS")
@@ -6849,10 +6837,22 @@
 			(justify top)
 		)
 	)
-	(gr_text "FTDI\nGND    VCC TXO RXI"
-		(at 127.38 52 0)
+	(gr_text "GND    VCC TXO RXI"
+		(at 127.38 53 0)
 		(layer "F.SilkS")
 		(uuid "1fd262df-e3ee-4457-8e8a-38a022b1f58b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "FTDI Interface"
+		(at 135 59 0)
+		(layer "F.SilkS")
+		(uuid "c2710807-4041-4793-918d-2641b94f7a1a")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -6993,6 +6993,18 @@
 			(justify left top)
 		)
 	)
+	(gr_text "8048-Series\nSingle Board Computer"
+		(at 163 107 0)
+		(layer "F.SilkS")
+		(uuid "b93efebf-4a7f-4973-a3a6-a229883e12dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify top)
+		)
+	)
 	(gr_text_box "JP5 EA:\n8039: set EA to +5V (external ROM).\n8048: set EA to GND (internal ROM).\n\nJP6 POWER:\n1–2: power from FTDI VCC.\n2–3: power from J2 pin 18.\nFIT ONE POWER JUMPER ONLY."
 		(start 120 95)
 		(end 148.5 107.307686)
@@ -7015,7 +7027,7 @@
 	)
 	(gr_text_box "JP1 A12 / JP2 A13: Select 4K ROM page.\nGND = 0, +5V = 1.\n\nJP3 A14/PGM / JP4 A15/VPP:\n* 27C128: set both to +5V.\n* 27C256: select 16K ROM bank\n(GND = 0, +5V = 1)."
 		(start 148.5 95)
-		(end 177 106.019731)
+		(end 177 107.307686)
 		(margins 1.0025 1.0025 1.0025 1.0025)
 		(layer "B.Mask")
 		(uuid "a4c4fab6-8fb8-417b-bb9a-3cb970e56a41")
