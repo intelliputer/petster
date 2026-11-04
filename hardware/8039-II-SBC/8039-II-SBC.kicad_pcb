@@ -3000,7 +3000,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "9905b35b-3e0e-40d9-bd10-4f7f346b5836")
-		(at 134.38 105.54 90)
+		(at 123.57 111.275 90)
 		(descr "Through hole straight pin header, 2x10, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x10 2.54mm double row")
 		(property "Reference" "J2"
@@ -4837,7 +4837,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "f4d3b7a7-a326-480d-a35f-da05a00cbd23")
-		(at 130.05 72)
+		(at 131 66)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U2"
@@ -5067,7 +5067,7 @@
 			)
 		)
 		(point
-			(at 138.86 74.65)
+			(at 139.81 68.65)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "2501367d-1691-4cee-b946-d1b31fea85b5")
@@ -5499,221 +5499,221 @@
 		(uuid "216fa4aa-0db4-47e8-8e22-af809c435001")
 	)
 	(gr_text "P1.0"
-		(at 134.38 100.04 90)
+		(at 123.57 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1001-7b60-4f66-8b6d-000000000001")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.1"
-		(at 134.38 108.54 90)
+		(at 123.57 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1002-7b60-4f66-8b6d-000000000002")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.2"
-		(at 136.92 100.04 90)
+		(at 126.11 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1003-7b60-4f66-8b6d-000000000003")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.3"
-		(at 136.92 108.54 90)
+		(at 126.11 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1004-7b60-4f66-8b6d-000000000004")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.4"
-		(at 139.46 100.04 90)
+		(at 128.65 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1005-7b60-4f66-8b6d-000000000005")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.5"
-		(at 139.46 108.54 90)
+		(at 128.65 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1006-7b60-4f66-8b6d-000000000006")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.6"
-		(at 142 100.04 90)
+		(at 131.19 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1007-7b60-4f66-8b6d-000000000007")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P1.7"
-		(at 142 108.54 90)
+		(at 131.19 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1008-7b60-4f66-8b6d-000000000008")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P2.4"
-		(at 144.54 100.04 90)
+		(at 133.73 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1009-7b60-4f66-8b6d-000000000009")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P2.5"
-		(at 144.54 108.54 90)
+		(at 133.73 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1010-7b60-4f66-8b6d-000000000010")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "P2.6"
-		(at 147.08 100.04 90)
+		(at 136.27 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1011-7b60-4f66-8b6d-000000000011")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "T1"
-		(at 147.08 108.54 90)
+		(at 136.27 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1012-7b60-4f66-8b6d-000000000012")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "PROG"
-		(at 149.62 100.04 90)
+		(at 138.81 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1013-7b60-4f66-8b6d-000000000013")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "/RD"
-		(at 149.62 108.54 90)
+		(at 138.81 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1014-7b60-4f66-8b6d-000000000014")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "/WR"
-		(at 152.16 100.04 90)
+		(at 141.35 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1015-7b60-4f66-8b6d-000000000015")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "/INT"
-		(at 152.16 108.54 90)
+		(at 141.35 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1016-7b60-4f66-8b6d-000000000016")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "/SS"
-		(at 154.7 100.04 90)
+		(at 143.89 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1017-7b60-4f66-8b6d-000000000017")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "+5V"
-		(at 154.7 108.54 90)
+		(at 143.89 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1018-7b60-4f66-8b6d-000000000018")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "GND"
-		(at 157.24 100.04 90)
+		(at 146.43 105.775 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1019-7b60-4f66-8b6d-000000000019")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
 	)
 	(gr_text "NC"
-		(at 157.24 108.54 90)
+		(at 146.43 114.275 90)
 		(layer "F.SilkS")
 		(uuid "1c7e1020-7b60-4f66-8b6d-000000000020")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 		)
@@ -5730,8 +5730,80 @@
 			(justify left top)
 		)
 	)
+	(gr_text "cartheur"
+		(at 94 114 0)
+		(layer "F.SilkS")
+		(uuid "5b7abe62-6160-4598-9652-9001cfa9e28b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "INS8039"
+		(at 106 111 0)
+		(layer "F.SilkS")
+		(uuid "866a347d-d323-4daf-b1d0-ea3bb8c816d6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "FTDI"
+		(at 131 57 0)
+		(layer "F.SilkS")
+		(uuid "1fd262df-e3ee-4457-8e8a-38a022b1f58b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "74LS373"
+		(at 132 92 0)
+		(layer "F.SilkS")
+		(uuid "ca04d0c6-34e6-4084-84a2-27d0208678e2")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "ROM"
+		(at 151 96 0)
+		(layer "F.SilkS")
+		(uuid "49485651-9c00-411c-b730-643801446120")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "8039 Single Board Computer"
+		(at 157 104 0)
+		(layer "F.SilkS")
+		(uuid "b93efebf-4a7f-4973-a3a6-a229883e12dd")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
 	(gr_text "EXPANSION"
-		(at 160 107.54 90)
+		(at 149.19 113.275 90)
 		(layer "F.SilkS")
 		(uuid "1fb242e6-cadd-4335-84e0-c389b9678a5b")
 		(effects
