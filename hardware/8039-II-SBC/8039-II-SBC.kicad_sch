@@ -7706,7 +7706,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "1uF"
 			(at 30.861 49.403 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7717,7 +7717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 27.94 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7730,6 +7730,7 @@
 		)
 		(property "Datasheet" ""
 			(at 27.94 48.26 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
