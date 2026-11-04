@@ -90,7 +90,7 @@
 	(footprint "Crystal:Crystal_HC49-U_Vertical"
 		(layer "F.Cu")
 		(uuid "0187094d-911a-418b-8cd7-1a09ead10bf7")
-		(at 84 64)
+		(at 89.56 62)
 		(descr "HC-49/U, Crystal, http://5hertz.com/pdfs/04404_D.pdf")
 		(property "Reference" "Y1"
 			(at 2.44 -3.52 0)
@@ -2645,7 +2645,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 		(layer "F.Cu")
 		(uuid "840e3d54-86ef-4ce7-a3d9-2e71ed316650")
-		(at 85.75 100.75)
+		(at 85.75 98.75)
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW1"
@@ -4685,7 +4685,7 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "e216455c-b1d0-41ba-9b15-5a9cb7d26608")
-		(at 92 94)
+		(at 88 92)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=5mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 5mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C1"
@@ -5718,8 +5718,20 @@
 			)
 		)
 	)
+	(gr_text "Match C2-C3 to Y1"
+		(at 83 74 0)
+		(layer "F.SilkS")
+		(uuid "87be61dd-54c3-44ba-a5d1-cba568d8c149")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify left top)
+		)
+	)
 	(gr_text "RESET"
-		(at 86.75 107.75 0)
+		(at 87 105 0)
 		(layer "F.SilkS")
 		(uuid "4f2a567b-1486-4122-a994-aaad1121ee4e")
 		(effects
@@ -5734,30 +5746,6 @@
 		(at 94 114 0)
 		(layer "F.SilkS")
 		(uuid "5b7abe62-6160-4598-9652-9001cfa9e28b")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.13)
-			)
-			(justify left top)
-		)
-	)
-	(gr_text "INS8039"
-		(at 106 111 0)
-		(layer "F.SilkS")
-		(uuid "866a347d-d323-4daf-b1d0-ea3bb8c816d6")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.13)
-			)
-			(justify left top)
-		)
-	)
-	(gr_text "FTDI"
-		(at 131 57 0)
-		(layer "F.SilkS")
-		(uuid "1fd262df-e3ee-4457-8e8a-38a022b1f58b")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -5791,7 +5779,7 @@
 		)
 	)
 	(gr_text "8039 Single Board Computer"
-		(at 157 104 0)
+		(at 156 105 0)
 		(layer "F.SilkS")
 		(uuid "b93efebf-4a7f-4973-a3a6-a229883e12dd")
 		(effects
@@ -5800,6 +5788,54 @@
 				(thickness 0.13)
 			)
 			(justify left top)
+		)
+	)
+	(gr_text "Choose Y1 for\n8039 clock"
+		(at 92 65 0)
+		(layer "F.SilkS")
+		(uuid "c9675528-cffd-4ea1-a599-eba50b18a812")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "INS8039\n6 MHz typical"
+		(at 109 111 0)
+		(layer "F.SilkS")
+		(uuid "866a347d-d323-4daf-b1d0-ea3bb8c816d6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "FTDI\nGND    VCC TXO RXI"
+		(at 131 56 0)
+		(layer "F.SilkS")
+		(uuid "1fd262df-e3ee-4457-8e8a-38a022b1f58b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "Set J2.18\nfor\nexternal power\nelse from\nFTDI\n"
+		(at 172 91 0)
+		(layer "F.SilkS")
+		(uuid "71dbfb9d-57bd-4368-9cf3-68a1e17ec5f6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify top)
 		)
 	)
 	(gr_text "EXPANSION"
@@ -5850,7 +5886,7 @@
 			(justify left top)
 		)
 	)
-	(gr_text "FTDI-5V-J2.18"
+	(gr_text "J2.18 5V FTDI\n          VCC"
 		(at 173 88 90)
 		(layer "F.SilkS")
 		(uuid "68741ee8-c35b-4a66-ada9-cdad54736144")
