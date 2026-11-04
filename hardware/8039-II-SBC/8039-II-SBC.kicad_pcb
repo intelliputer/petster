@@ -5447,7 +5447,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(JP6-Pin_1)")
+			(net "+5V")
 			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "2618f180-5a98-4160-b64a-4a3d10dd213d")
