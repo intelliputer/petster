@@ -6850,7 +6850,7 @@
 		)
 	)
 	(gr_text "FTDI Interface"
-		(at 135 59 0)
+		(at 133 59 0)
 		(layer "F.SilkS")
 		(uuid "c2710807-4041-4793-918d-2641b94f7a1a")
 		(effects
