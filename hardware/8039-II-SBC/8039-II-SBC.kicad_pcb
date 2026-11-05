@@ -8306,7 +8306,7 @@
 		(start 120 95)
 		(end 148.5 107.307686)
 		(margins 1.0025 1.0025 1.0025 1.0025)
-		(layer "B.Mask")
+		(layer "B.SilkS")
 		(uuid "5fd07037-6d89-4968-9f74-5a14a5141c4f")
 		(effects
 			(font
@@ -8315,7 +8315,7 @@
 			)
 			(justify left top mirror)
 		)
-		(border yes)
+		(border no)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -8323,10 +8323,10 @@
 		(knockout no)
 	)
 	(gr_text_box "JP1 A12 | JP2 A13: Select 4K ROM page.\nGND = 0, +5V = 1.\n\nJP3 A14/PGM | JP4 A15/VPP:\n* 27C128: set both to +5V.\n* 27C256: select 4K ROM page with\n  A14/A15\nGND = 0, +5V = 1."
-		(start 148.5 95)
-		(end 177 107.307686)
+		(start 148.75 95.25)
+		(end 177.25 107.557686)
 		(margins 1.0025 1.0025 1.0025 1.0025)
-		(layer "B.Mask")
+		(layer "B.SilkS")
 		(uuid "a4c4fab6-8fb8-417b-bb9a-3cb970e56a41")
 		(effects
 			(font
@@ -8335,27 +8335,27 @@
 			)
 			(justify left top mirror)
 		)
-		(border yes)
+		(border no)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(knockout no)
 	)
-	(gr_text_box "JUMPER SETTINGS\n\n"
-		(start 162 91)
-		(end 177 95)
+	(gr_text_box "JUMPER SETTINGS"
+		(start 162.5 90.460023)
+		(end 175.5 95.039978)
 		(margins 1.0025 1.0025 1.0025 1.0025)
-		(layer "B.Mask")
+		(layer "B.SilkS")
 		(uuid "8e4fd218-3a67-4b03-add5-c11c20ea7e15")
 		(effects
 			(font
 				(size 0.8 0.8)
 				(thickness 0.1)
 			)
-			(justify left top mirror)
+			(justify left bottom mirror)
 		)
-		(border yes)
+		(border no)
 		(stroke
 			(width 0.1)
 			(type solid)
