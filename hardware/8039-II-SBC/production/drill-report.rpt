@@ -1,5 +1,5 @@
 Drill report for 8039-II-SBC.kicad_pcb
-Created on 2026-11-05T15:38:48
+Created on 2026-11-05T16:00:55
 
 Copper Layer Stackup:
     =============================================================
@@ -10,12 +10,12 @@ Copper Layer Stackup:
 Drill file '8039-II-SBC.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (85 holes))
+    T1  0.300mm  0.0118"  (87 holes))
     T2  0.800mm  0.0315"  (106 holes))
     T3  1.000mm  0.0394"  (44 holes))
     T4  1.100mm  0.0433"  (4 holes))
 
-    Total plated holes count 239
+    Total plated holes count 241
 
 
 Not plated through holes are merged with plated holes
