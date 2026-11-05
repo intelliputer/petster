@@ -6869,6 +6869,16 @@
 		)
 		(uuid "fed021e9-75dd-45ea-99e3-c42688190b39")
 	)
+	(label "FTDI_VCC"
+		(at 44.45 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d82648c8-31de-46e4-95e0-ac42f28358fa")
+	)
 	(symbol
 		(lib_id "MCU_Intel:8039")
 		(at 88.9 83.82 0)
