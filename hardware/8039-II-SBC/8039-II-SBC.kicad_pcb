@@ -8121,7 +8121,7 @@
 			(justify top)
 		)
 	)
-	(gr_text "Set J2.18\nfor\nexternal power\nelse from\nFTDI\n"
+	(gr_text "Set for \nexternal power\nat J2.18\nElse from FTDI"
 		(at 172 91 0)
 		(layer "F.SilkS")
 		(uuid "71dbfb9d-57bd-4368-9cf3-68a1e17ec5f6")
