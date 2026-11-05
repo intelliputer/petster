@@ -8321,7 +8321,7 @@
 		)
 		(knockout no)
 	)
-	(gr_text_box "JP1 A12 / JP2 A13: Select 4K ROM page.\nGND = 0, +5V = 1.\n\nJP3 A14/PGM / JP4 A15/VPP:\n* 27C128: set both to +5V.\n* 27C256: select 16K ROM bank\n(GND = 0, +5V = 1)."
+	(gr_text_box "JP1 A12 | JP2 A13: Select 4K ROM page.\nGND = 0, +5V = 1.\n\nJP3 A14/PGM | JP4 A15/VPP:\n* 27C128: set both to +5V.\n* 27C256: select 4K ROM page with\n  A14/A15\nGND = 0, +5V = 1."
 		(start 148.5 95)
 		(end 177 107.307686)
 		(margins 1.0025 1.0025 1.0025 1.0025)
