@@ -79,9 +79,26 @@ used, verify that the adapter supplies 5 V rather than 3.3 V.
 
 ### I/O and decoupling
 
-J2 exposes U1 P1.0-P1.7, P2.4-P2.6, T1, PROG, `/RD`, `/WR`, `/INT`, `/SS`,
-and the selected external-power input.  J2.19 is GND; J2.20 is intentionally
-unconnected.  J1 provides the FTDI/power interface, with J1.2 and J1.6
+J2 is the processor expansion header.  It exposes the available GPIO and
+external-bus control signals, but not the multiplexed DB0-DB7 bus.
+
+| J2 pins | U1 signal | Function / production use |
+| --- | --- | --- |
+| 1-8 | P1.0-P1.7 | Eight quasi-bidirectional general-purpose I/O lines for firmware-controlled inputs or outputs. |
+| 9-11 | P2.4-P2.6 | Three additional quasi-bidirectional general-purpose I/O lines. |
+| 12 | T1 | External timer/counter input; firmware may use it for event counting or as a test input. |
+| 13 | PROG | Firmware-controlled auxiliary/program-strobe output for an external peripheral. |
+| 14 | `/RD` | Active-low external-data read strobe, asserted on external-memory (`MOVX`) read cycles. |
+| 15 | `/WR` | Active-low external-data write strobe, asserted on external-memory (`MOVX`) write cycles. |
+| 16 | `/INT` | Active-low external interrupt-request input. |
+| 17 | `/SS` | Single-step control input for externally controlled/debug execution. |
+| 18 | — | Optional regulated +5 V input; select it with JP6. This is not a logic signal. |
+| 19 | — | Ground. |
+| 20 | — | Intentionally unconnected. |
+
+P2.0-P2.3 are not on J2 because they drive EPROM address bits A8-A11 during
+program fetches. P2.7 is likewise not on J2 because it is the FTDI serial
+transmit signal. J1 provides the FTDI/power interface, with J1.2 and J1.6
 intentionally unconnected.
 
 C4, C5, and C6 are 100 nF supply bypass capacitors.  They remain connected

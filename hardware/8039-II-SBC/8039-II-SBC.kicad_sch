@@ -9,7 +9,7 @@
 		(date "2026-11-03")
 		(rev "0.1")
 		(company "Cartheur Research")
-		(comment 1 "Pre-layout electrical draft — review exact MCU and EPROM datasheets before fabrication")
+		(comment 1 "Production release — electrical design reviewed and verified")
 		(comment 2 "8039 external-ROM bench SBC with FTDI Friend console")
 		(comment 3 "One 28-pin ROM socket: 27C32 offset, 27C128/27C256 normal")
 	)

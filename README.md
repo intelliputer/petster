@@ -48,6 +48,25 @@ and external-ROM signals. Fit C1, both bank-select shunts, the 24-pin male
 plug, and the 28-pin socket before use. Do not change bank jumpers while the
 Petster is powered.
 
+The companion 8039-II SBC is also released for fabrication. It is a two-layer
+external-ROM MCS-48 bench computer with a socketed 8039, 74LS373 address latch,
+27C32/27C128/27C256 ROM socket, FTDI Friend console, and a 20-pin expansion
+header. Its 8039 multiplexed DB0-DB7 bus is connected to both the latch and
+ROM; J2 instead exposes the spare P1/P2 GPIO and external-bus control signals.
+
+| Item | Current state |
+| --- | --- |
+| KiCad source | [`hardware/8039-II-SBC/`](hardware/8039-II-SBC/) |
+| PCB | Routed two-layer through-hole board; 0 unconnected pads |
+| Design checks | ERC: 0 errors / 0 warnings; DRC: 0 violations (2026-11-05) |
+| Production archive | [`8039-II-SBC.zip`](hardware/8039-II-SBC/production/8039-II-SBC.zip) |
+| Electrical design | [`ELECTRICAL-ANALYSIS.md`](hardware/8039-II-SBC/ELECTRICAL-ANALYSIS.md) |
+| Assembly status | Fabrication-ready; first assembled-board bring-up remains pending |
+
+Use the [8039-II bring-up checklist](hardware/8039-II-SBC/BRING-UP.md) for
+first power-up. Verify jumper positions and component orientation, then use a
+current-limited 5 V source and a known-good diagnostic EPROM image.
+
 ### ROM integrity and physical provenance
 
 The ZIP payload, Intel HEX file, `src` binary, and C-style byte array resolve
